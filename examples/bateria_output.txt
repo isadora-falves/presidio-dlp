@@ -1,0 +1,5 @@
+<PERSON> y <PERSON> revisaron el contrato con <PERSON>.
+El NIE del solicitante es <DNI_NIE> y su teléfono fijo en Valencia es <PHONE>.
+Configuración recibida: {"user": "ops", "password": "<SECRET>"} y conexión https://dba_prod:<SECRET>@10.20.30.40:5432/core.
+El código de expediente EXP-2026-458 en Burjassot, Generalitat Valenciana y Universidad de Valencia no contiene PII.
+Tampoco deben tocarse el UUID 550e8400-e29b-41d4-a716-446655440000 ni la IP 192.168.1.254 ni el NIF de empresa B12345678.

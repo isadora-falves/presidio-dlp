@@ -1,0 +1,10 @@
+Vive en Calle Goya 45, 28001 Madrid, y trabaja con <PERSON>.
+La reunión será en Avda. Dalí, cerca de la Gran Vía, a las 10:00.
+Escríbale a Plaza Colón 3 o llame al <PHONE>.
+El expediente fue tramitado en la Calle Miguel Hernández de Burjassot.
+El domicilio fiscal es:
+Avda. Diagonal
+608, Barcelona.
+Vive en Calle
+Goya 45, Madrid.
+Reside en Paseo de la Castellana 200, junto al Urb. Las Lomas.

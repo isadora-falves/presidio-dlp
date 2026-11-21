@@ -1,0 +1,8 @@
+Su DNI es <DNI_NIE> según el padrón municipal.
+El NIE registrado es <DNI_NIE> para el trámite de residencia.
+El NIE antiguo, escrito como <DNI_NIE>, también debe reconocerse.
+Código de producto 87654321A (letra inválida, NO es DNI).
+No debe anonimizarse la referencia 12345678A, el checksum no cuadra.
+El NIF de la empresa es B12345678 y no es un DNI de persona.
+La factura fue emitida a nombre de ACME SOCIEDAD LIMITADA, CIF B87654321.
+El pasaporte español tiene el formato AAA123456, distinto del DNI.

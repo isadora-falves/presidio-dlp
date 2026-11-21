@@ -1,0 +1,5 @@
+﻿El expediente EXP-2026-991 tramitado por María del Carmen De la Torre-Vázquez (DNI 12345678-Z) en la Calle Miguel Hernández de Burjassot incluye el pago a Banco Santander.
+El contacto técnico JOSE ANTONIO PEREZ dejó su móvil +34-600-11-22-33 y el fijo de oficina (96) 354 12 34.
+La cuenta de destino es ES9121000418450200051332 y la subsidiaria francesa usa FR7630006000011234567890189.
+El usuario con NIE x 1234567 l reportó que la clave de acceso es "P@ssw0rd!2026" y adjuntó la API key sk-proj-98a7b6c5d4e3f2a1b0c9d8e7f6a5b4c3.
+No debe anonimizarse el hash SHA256 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 ni el código postal 46100 ni la referencia 12345678A.

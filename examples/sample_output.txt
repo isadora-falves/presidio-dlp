@@ -1,0 +1,12 @@
+<PERSON> escribió a <EMAIL> sobre el expediente EXP-2026-458.
+Su DNI es <DNI_NIE> y su NIE antiguo era <DNI_NIE>.
+Puede llamarla al teléfono <PHONE> o al fijo <PHONE>.
+El reembolso se envía al IBAN <IBAN>.
+En el servidor de pruebas, la contraseña es <SECRET> y el token de acceso es "<SECRET>".
+Authorization: Bearer <SECRET>
+La clave de acceso AWS es <SECRET>.
+El pedido 8742 sigue pendiente de confirmación.
+Otro cliente tiene el NIE <DNI_NIE> y el DNI <DNI_NIE>, escritos con guion y puntos.
+El PIN de su tarjeta es <SECRET> y el código secreto de respaldo es <SECRET>.
+Vive en Calle Goya 45, cerca de la Gran Vía; esta dirección no debe anonimizarse.
+Para confirmar el pago, el CVV de la tarjeta es <SECRET>.

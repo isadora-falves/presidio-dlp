@@ -1,0 +1,6 @@
+<PERSON> escribió a <EMAIL> sobre el expediente EXP-2026-458.
+El titular <PERSON> con DNI <DNI_NIE> y teléfono <PHONE> autorizó el pago.
+Transferencia a la cuenta <IBAN> con referencia DOC-9981.
+Credenciales temporales: password=<SECRET> y token: <SECRET>
+La residente extranjera <PERSON> (NIE <DNI_NIE>) llamó desde el <PHONE>.
+Código de producto 87654321A (letra inválida, NO es DNI) en el servidor de Madrid.

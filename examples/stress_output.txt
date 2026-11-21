@@ -1,0 +1,5 @@
+El expediente EXP-2026-991 tramitado por <PERSON> (DNI <DNI_NIE>) en la Calle Miguel Hernández de Burjassot incluye el pago a Banco Santander.
+El contacto técnico <PERSON> dejó su móvil <PHONE> y el fijo de oficina <PHONE>.
+La cuenta de destino es <IBAN> y la subsidiaria francesa usa <IBAN>.
+El usuario con NIE <DNI_NIE> reportó que la clave de acceso es "<SECRET>" y adjuntó la API key <SECRET>.
+No debe anonimizarse el hash SHA256 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 ni el código postal 46100 ni la referencia 12345678A.

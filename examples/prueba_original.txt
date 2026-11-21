@@ -1,0 +1,6 @@
+﻿Ana García escribió a ana@example.com sobre el expediente EXP-2026-458.
+El titular Carlos Mendoza con DNI 12345678Z y teléfono +34 612 345 678 autorizó el pago.
+Transferencia a la cuenta ES91 2100 0418 4502 0005 1332 con referencia DOC-9981.
+Credenciales temporales: password=S3cr3tP@ss2026 y token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIn0.dozjgNryP4J3jVmNHl0w5N_XgL0n3I9PlFUP0THsR8U
+La residente extranjera Elena Rostova (NIE X1234567L) llamó desde el 914567890.
+Código de producto 87654321A (letra inválida, NO es DNI) en el servidor de Madrid.
