@@ -61,7 +61,7 @@ La contraseña de prueba es <SECRET>
 CONVERSACIÓN 4 — MENSAJE INFORMAL
 ==================================================
 
-Hola! Soy Pedro.
+Hola! Soy <PERSON>.
 
 Mi nombre completo es <PERSON>.
 

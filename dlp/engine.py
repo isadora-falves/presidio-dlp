@@ -15,6 +15,7 @@ from dlp.recognizers.case_person import CasePersonRecognizer
 from dlp.recognizers.dni_nie import DniNieRecognizer
 from dlp.recognizers.iban_linebreak import IbanLineBreakRecognizer
 from dlp.recognizers.secret import SecretRecognizer
+from dlp.recognizers.self_intro_person import SelfIntroPersonRecognizer
 
 LANGUAGE = "es"
 
@@ -100,6 +101,7 @@ def _build_analyzer() -> AnalyzerEngine:
 
     analyzer.registry.add_recognizer(SecretRecognizer())
     analyzer.registry.add_recognizer(CasePersonRecognizer(nlp_engine=nlp_engine, language=LANGUAGE))
+    analyzer.registry.add_recognizer(SelfIntroPersonRecognizer())
     analyzer.registry.add_recognizer(IbanLineBreakRecognizer())
 
     return analyzer
