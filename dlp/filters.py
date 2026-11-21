@@ -90,6 +90,40 @@ def trim_person_honorifics(text: str, results: list) -> list:
     return results
 
 
+# Words that precede a product/reference code, not a person's document
+# number. A checksum-valid DNI shape isn't unique to a real DNI: an
+# 8-digit product code can pass the same mod-23 checksum purely by
+# coincidence (confirmed: "Producto 12345678Z: teclado inalámbrico" and
+# four more codes in the same list — all five pass the checksum, none is
+# a real person's document). Checksum alone can't tell them apart here;
+# context can.
+_PRODUCT_ONE_WORD = {
+    "producto", "productos", "artículo", "articulo", "artículos", "articulos",
+    "referencia", "ref.", "ref", "modelo", "sku",
+}
+_PRODUCT_TWO_WORD = {"código de producto", "codigo de producto"}
+
+
+def is_product_context(text: str, start: int) -> bool:
+    """True if `start` comes right after a product/reference-code indicator."""
+    words = _words_before(text, start, 3)
+    if not words:
+        return False
+    if words[-1].lower().strip(".,:") in _PRODUCT_ONE_WORD:
+        return True
+    if len(words) >= 2 and " ".join(w.lower().strip(".,:") for w in words[-2:]) in _PRODUCT_TWO_WORD:
+        return True
+    return False
+
+
+def drop_dni_nie_in_product_context(text: str, results: list) -> list:
+    """Drop DNI_NIE results that start right after a product/reference word."""
+    return [
+        r for r in results
+        if not (r.entity_type == "DNI_NIE" and is_product_context(text, r.start))
+    ]
+
+
 def drop_phone_inside_iban(results: list) -> list:
     """Drop PHONE results whose span falls entirely inside an IBAN.
 

@@ -5,6 +5,7 @@ from presidio_anonymizer import AnonymizerEngine
 from presidio_anonymizer.entities import OperatorConfig
 
 from dlp.filters import (
+    drop_dni_nie_in_product_context,
     drop_person_in_addresses,
     drop_person_with_digits,
     drop_phone_inside_iban,
@@ -176,6 +177,7 @@ def find_entities(text: str) -> list[tuple[int, int, str]]:
     results = trim_trailing_whitespace(text, results)
     results = drop_person_in_addresses(text, results)
     results = drop_person_with_digits(text, results)
+    results = drop_dni_nie_in_product_context(text, results)
     results = drop_phone_inside_iban(results)
     results = trim_person_honorifics(text, results)
     for result in results:
