@@ -99,16 +99,19 @@ def trim_person_honorifics(text: str, results: list) -> list:
 # context can.
 _PRODUCT_ONE_WORD = {
     "producto", "productos", "artículo", "articulo", "artículos", "articulos",
-    "referencia", "ref.", "ref", "modelo", "sku",
+    "referencia", "ref.", "ref", "modelo", "sku", "pedido", "pedidos",
 }
-_PRODUCT_TWO_WORD = {"código de producto", "codigo de producto"}
+_PRODUCT_PHRASES = {
+    "código de producto", "codigo de producto",
+    "número de pedido", "numero de pedido",
+}
 
 # A connector (verb or punctuation) is allowed between the indicator and
 # the number itself ("el código de producto ES 12345678Z"), the same
 # idea as SECRET's own connector handling.
 _PRODUCT_CONTEXT = re.compile(
     r"(?:"
-    + "|".join(re.escape(w) for w in sorted(_PRODUCT_ONE_WORD | _PRODUCT_TWO_WORD, key=len, reverse=True))
+    + "|".join(re.escape(w) for w in sorted(_PRODUCT_ONE_WORD | _PRODUCT_PHRASES, key=len, reverse=True))
     + r")\s*(?:es|son|era|eran|fue|fueron|:|=)?\s*$",
     re.IGNORECASE,
 )
