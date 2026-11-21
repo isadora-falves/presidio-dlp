@@ -103,17 +103,21 @@ _PRODUCT_ONE_WORD = {
 }
 _PRODUCT_TWO_WORD = {"código de producto", "codigo de producto"}
 
+# A connector (verb or punctuation) is allowed between the indicator and
+# the number itself ("el código de producto ES 12345678Z"), the same
+# idea as SECRET's own connector handling.
+_PRODUCT_CONTEXT = re.compile(
+    r"(?:"
+    + "|".join(re.escape(w) for w in sorted(_PRODUCT_ONE_WORD | _PRODUCT_TWO_WORD, key=len, reverse=True))
+    + r")\s*(?:es|son|era|eran|fue|fueron|:|=)?\s*$",
+    re.IGNORECASE,
+)
+
 
 def is_product_context(text: str, start: int) -> bool:
-    """True if `start` comes right after a product/reference-code indicator."""
-    words = _words_before(text, start, 3)
-    if not words:
-        return False
-    if words[-1].lower().strip(".,:") in _PRODUCT_ONE_WORD:
-        return True
-    if len(words) >= 2 and " ".join(w.lower().strip(".,:") for w in words[-2:]) in _PRODUCT_TWO_WORD:
-        return True
-    return False
+    """True if `start` is a product/reference-code number: a product
+    indicator word right before it, directly or through a connector."""
+    return bool(_PRODUCT_CONTEXT.search(text[:start]))
 
 
 def drop_dni_nie_in_product_context(text: str, results: list) -> list:
