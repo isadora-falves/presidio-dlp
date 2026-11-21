@@ -1,0 +1,236 @@
+
+INFORME DE PRUEBAS — ANONIMIZACIÓN DE DATOS PERSONALES
+
+Origen: Conversaciones, formularios y notas internas
+Idioma: Español
+Objetivo: Detectar información personal en texto libre
+Datos: Completamente ficticios
+
+==================================================
+CONVERSACIÓN 1 — ACTUALIZACIÓN DE PERFIL
+==================================================
+
+Cliente: Isadora Alves
+
+Hola, soy Isadora Alves. Quería actualizar mis datos porque he cambiado de teléfono. Ahora podéis llamarme al 600123456, aunque mi número antiguo era el +34 611 222 333.
+
+Mi correo es isadora.alves@example.com y mi documento es 12345678Z.
+
+Para los pagos utilizo la cuenta ES91 2100 0418 4502 0005 1332.
+
+La contraseña temporal que me dieron es DemoPass_2026!
+
+Gracias,
+Isadora
+
+==================================================
+CONVERSACIÓN 2 — MENSAJE DE SOPORTE
+==================================================
+
+Hola, buenas tardes.
+
+Soy Carlos Fernández. No puedo entrar en mi cuenta.
+
+Mi email es carlos.fernandez@example.com. Mi teléfono es el 0034-611-987-654.
+
+El número de mi DNI es 12.345.678-A.
+
+Mi cuenta bancaria es ES7921000813610123456789.
+
+La clave que utilizaba era Carlos_Test#2026, pero ya no funciona.
+
+¿Podéis ayudarme?
+
+==================================================
+CONVERSACIÓN 3 — FORMULARIO CON TEXTO LIBRE
+==================================================
+
+Me llamo María García, aunque en algunos documentos aparezco como María G. García.
+
+Mi teléfono nuevo es +34 (622) 456-789.
+
+Podéis escribirme a maria.garcia@example.com.
+
+Mi NIE es X1234567L.
+
+El IBAN de mi cuenta es ES34-2100-1800-0502-0005-1332.
+
+La contraseña de prueba es Maria_Segura_2026!
+
+==================================================
+CONVERSACIÓN 4 — MENSAJE INFORMAL
+==================================================
+
+Hola! Soy Pedro.
+
+Mi nombre completo es Pedro Martínez.
+
+Mi número es 633.111.222, el de España, sin el +34.
+
+Mi correo es pedro.martinez@example.com.
+
+Mi DNI es 11 223 344 A.
+
+El IBAN es ES66 2100 0418 4012 3456 7891.
+
+La contraseña que puse cuando me registré era Pedro_2026$.
+
+==================================================
+CONVERSACIÓN 5 — MENSAJE CON ERRORES DE ESCRITURA
+==================================================
+
+Buenas, soy Lucia Rodriguez.
+
+Mi correo es lucia.rodriguez@example.com
+
+Mi movil es el 644222333.
+
+Mi nie es Y7654321M.
+
+Mi iban es ES45 2100 0418 4502 0005 6789.
+
+La pass temporal que me dieron es Lucia_Prueba#26.
+
+Perdon por escribir sin tildes, estoy desde el movil.
+
+==================================================
+CONVERSACIÓN 6 — INFORMACIÓN EN UNA SOLA FRASE
+==================================================
+
+Javier López, DNI 22334455B, puede ser contactado en el teléfono +34 655-444-555 o mediante javier.lopez@example.com. Su cuenta bancaria es ES1821000418450200051234 y la contraseña temporal que proporcionó fue JavierDemo_2026!
+
+==================================================
+CONVERSACIÓN 7 — DATOS REPETIDOS Y EN DIFERENTE ORDEN
+==================================================
+
+La usuaria Ana Sánchez confirmó que el teléfono 666777888 corresponde a su nuevo número de contacto.
+
+Ana Sánchez también indicó que su DNI es 33445566C.
+
+En una conversación anterior, Ana había facilitado el número +34 666 777 888 y el correo ana.sanchez@example.com.
+
+La cuenta bancaria asociada al perfil es ES57 2100 0418 4012 3456 7890.
+
+La contraseña de prueba es Ana_Test_2026!
+
+==================================================
+CONVERSACIÓN 8 — MENSAJE CON ABREVIATURAS
+==================================================
+
+Nombre: Miguel Torres
+
+Email: miguel.torres@example.com
+
+Tlf: 677888999
+
+Doc. ident.: Z1122334R
+
+Cta. bancaria: ES9021000418450200054321
+
+Pass: Miguel_Seguro#2026
+
+==================================================
+CONVERSACIÓN 9 — NOTA INTERNA DEL AGENTE
+==================================================
+
+El cliente Miguel Torres llamó para informar de que había perdido el acceso a su cuenta.
+
+El agente confirmó que el usuario se identifica con el NIE Z-1122334-R.
+
+Durante la llamada, el cliente facilitó su número de contacto, 677.888.999, y su correo electrónico, miguel.torres@example.com.
+
+El IBAN facilitado fue ES90-2100-0418-4502-0005-4321.
+
+El cliente mencionó que su contraseña anterior era Miguel_Seguro#2026.
+
+==================================================
+CONVERSACIÓN 10 — INFORMACIÓN EN FORMATO MIXTO
+==================================================
+
+Hola, soy Isadora Alves.
+
+Mi DNI es 12.345.678-Z, aunque en el formulario aparece como 12345678Z.
+
+Mi teléfono es 600 123 456. También podéis llamarme al 0034 600123456.
+
+Mi correo es isadora.alves@example.com.
+
+El IBAN es ES91-2100-0418-4502-0005-1332.
+
+La clave temporal que me dieron es DemoPass_2026!
+
+==================================================
+CONVERSACIÓN 11 — DATOS DENTRO DE UNA HISTORIA
+==================================================
+
+Ayer recibimos un mensaje de Carlos Fernández.
+
+Carlos explicó que había cambiado de domicilio y que necesitaba actualizar su información.
+
+Nos dijo que su nuevo número de teléfono era el 611987654 y que prefería recibir las notificaciones en carlos.fernandez@example.com.
+
+También confirmó que su documento de identidad era el X1234567L.
+
+Para verificar su cuenta bancaria, escribió el siguiente número: ES79 2100 0813 6101 2345 6789.
+
+Finalmente, Carlos indicó que la contraseña temporal que había recibido era Carlos_Test#2026.
+
+==================================================
+CONVERSACIÓN 12 — MENSAJE SIN ETIQUETAS
+==================================================
+
+Soy María García. Me podéis contactar en maria.garcia@example.com.
+
+El número que uso ahora es 622456789.
+
+Mi documento es X1234567L.
+
+La cuenta donde recibo los pagos empieza por ES34 y termina en 1332.
+
+Mi contraseña de prueba es Maria_Segura_2026!
+
+==================================================
+CONVERSACIÓN 13 — INFORMACIÓN ESCRITA CON PALABRAS
+==================================================
+
+Hola, me llamo Pedro Martínez.
+
+Mi número de teléfono es seis uno uno, nueve ocho siete, seis cinco cuatro.
+
+Mi correo electrónico es pedro.martinez@example.com.
+
+Mi DNI es once millones doscientos treinta y tres mil cuatrocientos cuarenta y cuatro A.
+
+Mi contraseña es Pedro_2026$.
+
+==================================================
+CONVERSACIÓN 14 — DATOS CON SEPARADORES INUSUALES
+==================================================
+
+Nombre: Ana Sánchez
+
+Teléfono: +34/666/777/888
+
+Correo: ana.sanchez @ example.com
+
+DNI: 33.445.566-C
+
+IBAN: ES57.2100.0418.4012.3456.7890
+
+Contraseña: Ana_Test_2026!
+
+==================================================
+CONVERSACIÓN 15 — TEXTO CON INFORMACIÓN PERSONAL MEZCLADA
+==================================================
+
+El cliente Javier López, cuyo correo es javier.lopez@example.com, solicitó una actualización de su cuenta.
+
+El agente anotó que el número de teléfono del cliente es el 655444555 y que su documento de identidad es 22334455B.
+
+Durante la conversación, Javier confirmó que el IBAN asociado a su cuenta es ES1821000418450200051234.
+
+También mencionó que su contraseña temporal era JavierDemo_2026!
+
+==================================================
+FIN DEL DOCUMENTO
+==================================================

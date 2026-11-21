@@ -107,3 +107,22 @@ def drop_phone_inside_iban(results: list) -> list:
             and any(r.start >= s and r.end <= e for s, e in iban_spans)
         )
     ]
+
+
+def trim_trailing_whitespace(text: str, results: list) -> list:
+    """Trim leading/trailing whitespace off any result's span.
+
+    When a chunk given to the analyzer ends right after a line break
+    (paragraph-by-paragraph analysis, see ADR-23), the native
+    SpacyRecognizer sometimes stretches a PERSON span to swallow that
+    trailing "\\n" — confirmed: "Nombre: Miguel Torres\\n" tagged
+    "Miguel Torres\\n" as PERSON, and replacing it ate the blank line
+    that was supposed to separate it from the next field. No entity
+    should ever start or end on whitespace.
+    """
+    for r in results:
+        while r.end > r.start and text[r.end - 1].isspace():
+            r.end -= 1
+        while r.end > r.start and text[r.start].isspace():
+            r.start += 1
+    return results

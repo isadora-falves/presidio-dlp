@@ -9,6 +9,7 @@ from dlp.filters import (
     drop_person_with_digits,
     drop_phone_inside_iban,
     trim_person_honorifics,
+    trim_trailing_whitespace,
 )
 from dlp.recognizers.case_person import CasePersonRecognizer
 from dlp.recognizers.dni_nie import DniNieRecognizer
@@ -33,20 +34,31 @@ _PHONE_CONTEXT = ["teléfono", "móvil", "celular", "llamar", "tel", "fijo", "wh
 # The assignment asks us to recognize phone numbers from all of Europe, not
 # just Spain (same scope as IBAN, which already covers all 76 countries in
 # its own registry without any restriction on our side). ISO region codes
-# for `phonenumbers`. Each region was explicitly tested against a battery
-# of "this is NOT a phone number" values (postal codes, IPs, reference
-# numbers, a DNI without its letter, a UUID) and 4 were excluded for
-# producing real false positives:
+# for `phonenumbers`. Each region was tested against a battery of "this is
+# NOT a phone number" values (postal codes, IPs, reference numbers, a
+# dotted DNI without a valid control letter, a UUID, bare digit runs of
+# 4-10 digits) and 11 were excluded for producing real false positives —
+# almost all small countries whose national numbers are just a handful of
+# bare digits with no area code, the same shape as a DNI, a reference
+# number, or a postal code:
 #   - LU (Luxembourg): accepts almost any bare 4-5 digit run as "valid"
 #     ("4502", "8742", "46100"...), even at leniency=3.
 #   - DK (Denmark): Danish numbers are 8 bare digits, same shape as a DNI
 #     without its control letter or an internal reference ("87654321").
 #   - NO (Norway): matched a 5-digit postal code.
 #   - FO (Faroe Islands): matched an IP address inside a connection string.
+#   - CY, GI, LV, MT: 8 bare digits, same shape as a DNI ("22334455").
+#   - MC (Monaco): 8 bare digits, matched a DNI with dots and an invalid
+#     control letter ("33.445.566-C" — the DNI itself was correctly left
+#     untouched, but the digits alone were tagged PHONE).
+#   - AD (Andorra): matched bare 6-digit runs ("111111", "123456").
+#   - PL (Poland): 9 bare digits — the exact same shape as a valid Spanish
+#     mobile number ("612345678"), which is far more likely in a Spanish
+#     document and would otherwise get fought over by two regions.
 _EUROPE_REGIONS = (
-    "AD", "AL", "AT", "BA", "BE", "BG", "BY", "CH", "CY", "CZ", "DE", "EE",
-    "ES", "FI", "FR", "GB", "GI", "GR", "HR", "HU", "IE", "IS", "IT", "LI",
-    "LT", "LV", "MC", "MD", "ME", "MK", "MT", "NL", "PL", "PT", "RO",
+    "AL", "AT", "BA", "BE", "BG", "BY", "CH", "CZ", "DE", "EE",
+    "ES", "FI", "FR", "GB", "GR", "HR", "HU", "IE", "IS", "IT", "LI",
+    "LT", "MD", "ME", "MK", "NL", "PT", "RO",
     "RS", "RU", "SE", "SI", "SK", "SM", "TR", "UA", "VA", "XK",
 )
 
@@ -159,6 +171,7 @@ def find_entities(text: str) -> list[tuple[int, int, str]]:
             r.end += start
         results.extend(chunk_results)
 
+    results = trim_trailing_whitespace(text, results)
     results = drop_person_in_addresses(text, results)
     results = drop_person_with_digits(text, results)
     results = drop_phone_inside_iban(results)

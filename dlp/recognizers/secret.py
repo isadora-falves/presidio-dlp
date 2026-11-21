@@ -11,7 +11,7 @@ from presidio_analyzer.nlp_engine import NlpArtifacts
 # out on purpose: it's only a secret when paired with a qualifier (código
 # postal, código de barras, código de producto are NOT secrets).
 _KEYWORDS = (
-    r"contraseñas?|claves?|passwords?|pwd|passwd|"
+    r"contraseñas?|claves?|passwords?|pass|pwd|passwd|"
     r"tokens?|api[_-]?keys?|secrets?|credenciales?|pines?|pin|"
     r"passphrase|frase\s+de\s+paso"
 )
@@ -22,7 +22,7 @@ _KEYWORDS = (
 # phrases like "la contraseña antigua ya no es válida".
 _QUALIFIERS = (
     r"de\s+acceso|de\s+sesión|de\s+administrador|de\s+red|de\s+seguridad|"
-    r"de\s+(?:la|su|tu|mi)\s+tarjeta|maestra|temporal|nueva|actual"
+    r"de\s+(?:la|su|tu|mi)\s+tarjeta|de\s+prueba|maestra|temporal|nueva|actual|anterior"
 )
 
 # "código" is never tagged on its own: it only counts as a secret when
@@ -40,9 +40,22 @@ _SUFFIX = r"(?:\s+de\s+respaldo\b)?"
 
 def _value_tail(min_len: int) -> str:
     # The leading [\"']? covers JSON ("password": "value"): the closing
-    # quote of the key arrives before the colon.
+    # quote of the key arrives before the colon. The optional "que ..."
+    # clause covers a relative clause between the keyword and the
+    # connector ("la contraseña QUE ME DIERON es X", "la clave QUE
+    # UTILIZABA era Y") — confirmed missed without it. "era"/"eran"/
+    # "fue"/"fueron" cover the past tense of "ser" ("la clave... ERA X"),
+    # which "es"/"son" alone don't.
+    #
+    # The \b around the word connectors is critical: without it, the
+    # greedy "que ..." clause above can shrink its last \w+ one letter at
+    # a time until it lands exactly on an "es" hidden inside a later
+    # word — confirmed: "...era Carlos_Test#2026" matched the "es" inside
+    # "Test", splitting the value into just "t#2026". ":"/"=" don't need
+    # it (punctuation can't hide inside a \w+ word).
     return (
-        r"[\"']?\s*(?:es|son|:|=)\s*[:=]?\s*"
+        r"[\"']?(?:\s+que\s+\w+(?:\s+\w+){0,5})?"
+        r"\s*(?:\b(?:es|son|era|eran|fue|fueron)\b|:|=)\s*[:=]?\s*"
         rf'[\"\'“]?(?P<secret>[^\s\"\'”.,;]{{{min_len},}})[\"\'”]?'
     )
 

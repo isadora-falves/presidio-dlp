@@ -1,0 +1,236 @@
+
+INFORME DE PRUEBAS — ANONIMIZACIÓN DE DATOS PERSONALES
+
+Origen: Conversaciones, formularios y notas internas
+Idioma: Español
+Objetivo: Detectar información personal en texto libre
+Datos: Completamente ficticios
+
+==================================================
+CONVERSACIÓN 1 — ACTUALIZACIÓN DE PERFIL
+==================================================
+
+Cliente: <PERSON>
+
+Hola, soy <PERSON>. <PERSON> actualizar mis datos porque he cambiado de teléfono. Ahora podéis llamarme al <PHONE>, aunque mi número antiguo era el <PHONE>.
+
+Mi correo es <EMAIL> y mi documento es <DNI_NIE>.
+
+Para los pagos utilizo la cuenta <IBAN>.
+
+La contraseña temporal que me dieron es <SECRET>
+
+Gracias,
+Isadora
+
+==================================================
+CONVERSACIÓN 2 — MENSAJE DE SOPORTE
+==================================================
+
+Hola, buenas tardes.
+
+Soy <PERSON>. No puedo entrar en mi cuenta.
+
+Mi email es <EMAIL>. Mi teléfono es el <PHONE>.
+
+El número de mi DNI es 12.345.678-A.
+
+Mi cuenta bancaria es <IBAN>.
+
+La clave que utilizaba era <SECRET>, pero ya no funciona.
+
+¿Podéis ayudarme?
+
+==================================================
+CONVERSACIÓN 3 — FORMULARIO CON TEXTO LIBRE
+==================================================
+
+Me llamo <PERSON>, aunque en algunos documentos aparezco como <PERSON>.
+
+Mi teléfono nuevo es <PHONE>.
+
+Podéis escribirme a <EMAIL>.
+
+Mi NIE es <DNI_NIE>.
+
+El IBAN de mi cuenta es ES34-2100-1800-0502-0005-1332.
+
+La contraseña de prueba es <SECRET>
+
+==================================================
+CONVERSACIÓN 4 — MENSAJE INFORMAL
+==================================================
+
+Hola! Soy Pedro.
+
+Mi nombre completo es <PERSON>.
+
+Mi número es <PHONE>, el de España, sin el +34.
+
+Mi correo es <EMAIL>.
+
+Mi DNI es 11 223 344 A.
+
+El IBAN es <IBAN>.
+
+La contraseña que puse cuando me registré era <SECRET>.
+
+==================================================
+CONVERSACIÓN 5 — MENSAJE CON ERRORES DE ESCRITURA
+==================================================
+
+Buenas, soy <PERSON>.
+
+Mi correo es <EMAIL>
+
+Mi movil es el <PHONE>.
+
+Mi nie es Y7654321M.
+
+Mi iban es ES45 2100 0418 4502 0005 6789.
+
+La pass temporal que me dieron es <SECRET>.
+
+Perdon por escribir sin tildes, estoy desde el movil.
+
+==================================================
+CONVERSACIÓN 6 — INFORMACIÓN EN UNA SOLA FRASE
+==================================================
+
+<PERSON>, DNI 22334455B, puede ser contactado en el teléfono <PHONE> o mediante <EMAIL>. Su cuenta bancaria es ES1821000418450200051234 y la contraseña temporal que proporcionó fue <SECRET>
+
+==================================================
+CONVERSACIÓN 7 — DATOS REPETIDOS Y EN DIFERENTE ORDEN
+==================================================
+
+La usuaria <PERSON> confirmó que el teléfono <PHONE> corresponde a su nuevo número de contacto.
+
+<PERSON> también indicó que su DNI es 33445566C.
+
+En una conversación anterior, <PERSON> había facilitado el número <PHONE> y el correo <EMAIL>.
+
+La cuenta bancaria asociada al perfil es ES57 2100 0418 4012 3456 7890.
+
+La contraseña de prueba es <SECRET>
+
+==================================================
+CONVERSACIÓN 8 — MENSAJE CON ABREVIATURAS
+==================================================
+
+Nombre: <PERSON>
+
+Email: <EMAIL>
+
+Tlf: <PHONE>
+
+Doc. ident.: Z1122334R
+
+Cta. bancaria: ES9021000418450200054321
+
+Pass: <SECRET>
+
+==================================================
+CONVERSACIÓN 9 — NOTA INTERNA DEL AGENTE
+==================================================
+
+El cliente <PERSON> llamó para informar de que había perdido el acceso a su cuenta.
+
+El agente confirmó que el usuario se identifica con el NIE Z-1122334-R.
+
+Durante la llamada, el cliente facilitó su número de contacto, <PHONE>, y su correo electrónico, <EMAIL>.
+
+El IBAN facilitado fue ES90-2100-0418-4502-0005-4321.
+
+El cliente mencionó que su contraseña anterior era <SECRET>.
+
+==================================================
+CONVERSACIÓN 10 — INFORMACIÓN EN FORMATO MIXTO
+==================================================
+
+Hola, soy <PERSON>.
+
+Mi DNI es <DNI_NIE>, aunque en el formulario aparece como <DNI_NIE>.
+
+Mi teléfono es <PHONE>. También podéis llamarme al <PHONE>.
+
+Mi correo es <EMAIL>.
+
+El IBAN es <IBAN>.
+
+La clave temporal que me dieron es <SECRET>
+
+==================================================
+CONVERSACIÓN 11 — DATOS DENTRO DE UNA HISTORIA
+==================================================
+
+Ayer recibimos un mensaje de <PERSON>.
+
+<PERSON> explicó que había cambiado de domicilio y que necesitaba actualizar su información.
+
+Nos dijo que su nuevo número de teléfono era el <PHONE> y que prefería recibir las notificaciones en <EMAIL>.
+
+También confirmó que su documento de identidad era el <DNI_NIE>.
+
+Para verificar su cuenta bancaria, escribió el siguiente número: <IBAN>.
+
+Finalmente, <PERSON> indicó que la contraseña temporal que había recibido era <SECRET>.
+
+==================================================
+CONVERSACIÓN 12 — MENSAJE SIN ETIQUETAS
+==================================================
+
+Soy <PERSON>. Me podéis contactar en <EMAIL>.
+
+El número que uso ahora es <PHONE>.
+
+Mi documento es <DNI_NIE>.
+
+La cuenta donde recibo los pagos empieza por ES34 y termina en 1332.
+
+Mi contraseña de prueba es <SECRET>
+
+==================================================
+CONVERSACIÓN 13 — INFORMACIÓN ESCRITA CON PALABRAS
+==================================================
+
+Hola, me llamo <PERSON>.
+
+Mi número de teléfono es seis uno uno, nueve ocho siete, seis cinco cuatro.
+
+Mi correo electrónico es <EMAIL>.
+
+Mi DNI es once millones doscientos treinta y tres mil cuatrocientos cuarenta y cuatro A.
+
+Mi contraseña es <SECRET>.
+
+==================================================
+CONVERSACIÓN 14 — DATOS CON SEPARADORES INUSUALES
+==================================================
+
+Nombre: <PERSON>
+
+Teléfono: <PHONE>
+
+Correo: ana.sanchez @ example.com
+
+DNI: 33.445.566-C
+
+IBAN: ES57.2100.0418.4012.3456.7890
+
+Contraseña: <SECRET>
+
+==================================================
+CONVERSACIÓN 15 — TEXTO CON INFORMACIÓN PERSONAL MEZCLADA
+==================================================
+
+El cliente <PERSON>, cuyo correo es <EMAIL>, solicitó una actualización de su cuenta.
+
+El agente anotó que el número de teléfono del cliente es el <PHONE> y que su documento de identidad es 22334455B.
+
+Durante la conversación, <PERSON> confirmó que el IBAN asociado a su cuenta es ES1821000418450200051234.
+
+También mencionó que su contraseña temporal era <SECRET>
+
+==================================================
+FIN DEL DOCUMENTO
+==================================================
