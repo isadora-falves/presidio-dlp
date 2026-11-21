@@ -5,13 +5,13 @@ from typing import List, Optional
 from presidio_analyzer import EntityRecognizer, RecognizerResult
 from presidio_analyzer.nlp_engine import NlpArtifacts
 
-# El IbanRecognizer nativo de Presidio solo admite espacio o guion entre
-# los bloques de 4 caracteres ("[ -]?"), no un salto de línea. En un
-# documento con el texto envuelto a cierto ancho, un IBAN largo puede
-# partirse justo ahí (comprobado: "ES91 2100\n0418 4502 0005 1332" no se
-# detectaba). Este recognizer cubre solo ese caso: exige que haya un salto
-# de línea real en la coincidencia, para no duplicar el trabajo del
-# recognizer nativo en el caso normal.
+# Presidio's native IbanRecognizer only allows a space or hyphen between
+# the 4-character blocks ("[ -]?"), not a line break. In a document whose
+# text is wrapped at some width, a long IBAN can get split right there
+# (confirmed: "ES91 2100\n0418 4502 0005 1332" went undetected). This
+# recognizer covers only that case: it requires an actual line break in
+# the match, so it doesn't duplicate the native recognizer's work on the
+# normal case.
 _CANDIDATE = re.compile(r"\b[A-Z]{2}[0-9]{2}(?:[ \t\r\n-]?[A-Z0-9]{4}){2,7}\b")
 
 _LETTERS = {ord(d): str(i) for i, d in enumerate(string.digits + string.ascii_uppercase)}
@@ -29,7 +29,7 @@ def _is_valid_iban(raw: str) -> bool:
 
 
 class IbanLineBreakRecognizer(EntityRecognizer):
-    """IBAN partido por un salto de línea dentro del propio número."""
+    """An IBAN split by a line break inside the number itself."""
 
     ENTITY = "IBAN_CODE"
     SCORE = 1.0

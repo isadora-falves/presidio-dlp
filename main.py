@@ -13,6 +13,10 @@ def main() -> int:
     args = parser.parse_args()
 
     try:
+        # utf-8-sig strips a leading BOM if present (common when a file is
+        # saved from Windows/Notepad) and behaves like plain utf-8 otherwise.
+        # Without it, a BOM silently merges into the first word of the
+        # document and breaks NER on it (see bitácora ADR-13).
         with open(args.input_path, "r", encoding="utf-8-sig", newline="") as f:
             original_text = f.read()
     except FileNotFoundError:

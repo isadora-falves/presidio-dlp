@@ -1,0 +1,805 @@
+INFORME CONFIDENCIAL — USO INTERNO
+ARCANUBE S.A. — AUDITORÍA DE PROTECCIÓN DE DATOS 2026
+Documento generado para pruebas de anonimización. Todos los datos de personas, cuentas,
+contraseñas y tokens de este archivo son ficticios y se generaron solo para este ejercicio.
+
+
+SECCIÓN PRIMERA: EXPEDIENTES DE PERSONAL
+
+Expediente nº 0001 — Departamento de Sistemas.
+Titular: <PERSON>, con documento de identidad <DNI_NIE>.
+Contacto: teléfono <PHONE>, correo electrónico <EMAIL>.
+Domicilio: <PERSON> 174, 08013 Barcelona.
+Cuenta bancaria asociada a nóminas: <IBAN>.
+El registro del incidente contiene: {"user": "sergio", "password": "<SECRET>"}
+Referencia interna no sensible: 89089901P (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: A31429110.
+
+Expediente nº 0002 — Departamento de Atención al Cliente.
+Titular: <PERSON>, con documento de identidad <DNI_NIE>.
+Contacto: teléfono <PHONE>, correo electrónico <EMAIL>.
+Domicilio: Plaza Dalí 24, 08013 Barcelona.
+Cuenta bancaria asociada a nóminas: <IBAN>.
+La clave de API comprometida fue <SECRET>.
+Referencia interna no sensible: 18883684Y (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: F38538251.
+
+Expediente nº 0003 — Departamento de Atención al Cliente.
+Titular: <PERSON>, con documento de identidad <DNI_NIE>.
+Contacto: teléfono <PHONE>, correo electrónico <EMAIL>.
+Domicilio: Avda. Miguel Hernández 191, 46100 Burjassot.
+Cuenta bancaria asociada a nóminas: <IBAN>.
+La cadena de conexión filtrada fue postgres://delgado:<SECRET>@10.20.203.175:5432/core.
+Referencia interna no sensible: 66661351C (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: B61642594.
+
+Expediente nº 0004 — Departamento de Logística.
+Titular: <PERSON>, con documento de identidad <DNI_NIE>.
+Contacto: teléfono <PHONE>, correo electrónico <EMAIL>.
+Domicilio: Calle Gran Vía 185, 50001 Zaragoza.
+Cuenta bancaria asociada a nóminas: <IBAN>.
+La clave de API comprometida fue <SECRET>.
+Referencia interna no sensible: 82383095Y (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: E63551839.
+
+Expediente nº 0005 — Departamento de Finanzas.
+Titular: Dra. <PERSON>, con documento de identidad <DNI_NIE>.
+Contacto: teléfono <PHONE>, correo electrónico <EMAIL>.
+Domicilio: <PERSON> 87, 08013 Barcelona.
+Cuenta bancaria asociada a nóminas: <IBAN>.
+La cadena de conexión filtrada fue postgres://dra:<SECRET>@10.20.72.172:5432/core.
+Referencia interna no sensible: 75151231Y (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: J27758595.
+
+Expediente nº 0006 — Departamento de Dirección General.
+Titular: <PERSON>, con documento de identidad <DNI_NIE>.
+Contacto: teléfono <PHONE>, correo electrónico <EMAIL>.
+Domicilio: <PERSON> 169, 08013 Barcelona.
+Cuenta bancaria asociada a nóminas: <IBAN>.
+La clave de API comprometida fue <SECRET>.
+Referencia interna no sensible: 87736262H (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: A52091325.
+Victoria es uno de los valores centrales que promueve la compañía este año.
+
+Expediente nº 0007 — Departamento de Atención al Cliente.
+Titular: <PERSON>, con documento de identidad <DNI_NIE>.
+Contacto: teléfono <PHONE>, correo electrónico <EMAIL>.
+Domicilio: Urb. Dalí 48, 28001 Madrid.
+Cuenta bancaria asociada a nóminas: <IBAN>.
+La clave de API comprometida fue <SECRET>.
+Referencia interna no sensible: 99038526A (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: C45496015.
+
+Expediente nº 0008 — Departamento de Logística.
+Titular: <PERSON>, con documento de identidad <DNI_NIE>.
+Contacto: teléfono <PHONE>, correo electrónico <EMAIL>.
+Domicilio: Urb. Miguel Hernández 184, 46100 Burjassot.
+Cuenta bancaria asociada a nóminas: <IBAN>.
+La cadena de conexión filtrada fue postgres://sergio:<SECRET>@ss4301#@10.20.190.114:5432/core.
+Referencia interna no sensible: 84045292Z (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: J11297845.
+
+Expediente nº 0009 — Departamento de Recursos Humanos.
+Titular: <PERSON>, con documento de identidad <DNI_NIE>.
+Contacto: teléfono <PHONE>, correo electrónico <EMAIL>.
+Domicilio: Urb. Velázquez 38, 46100 Burjassot.
+Cuenta bancaria asociada a nóminas: <IBAN>.
+El PIN de la tarjeta corporativa asociada es 3662.
+Referencia interna no sensible: 33763566Z (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: A34073380.
+
+Expediente nº 0010 — Departamento de Logística.
+Titular: <PERSON> navarro, con documento de identidad <DNI_NIE>.
+Contacto: teléfono <PHONE>, correo electrónico <EMAIL>.
+Domicilio: <PERSON> 98, 08013 Barcelona.
+Cuenta bancaria asociada a nóminas: <IBAN>.
+El PIN de la tarjeta corporativa asociada es 7528.
+Referencia interna no sensible: 54058573P (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: B47463522.
+
+Expediente nº 0011 — Departamento de Jurídico.
+Titular: <PERSON>, con documento de identidad <DNI_NIE>.
+Contacto: teléfono <PHONE>, correo electrónico <EMAIL>.
+Domicilio: <PERSON> 46, 28001 Madrid.
+Cuenta bancaria asociada a nóminas: <IBAN>.
+Durante la auditoría se detectó que la contraseña N0v437# quedó expuesta en un registro del sistema.
+Referencia interna no sensible: 58884978Z (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: B99152472.
+
+Expediente nº 0012 — Departamento de Logística.
+Titular: <PERSON>, con documento de identidad <DNI_NIE>.
+Contacto: teléfono <PHONE>, correo electrónico <EMAIL>.
+Domicilio: Plaza Gran Vía 105, 50001 Zaragoza.
+Cuenta bancaria asociada a nóminas: <IBAN>.
+El CVV de la tarjeta es <SECRET>.
+Referencia interna no sensible: 38210242J (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: F72409658.
+Paz es el nombre adoptado para el nuevo protocolo de mediación interna.
+
+Expediente nº 0013 — Departamento de Auditoría Interna.
+Titular: D. <PERSON>, con documento de identidad <DNI_NIE>.
+Contacto: teléfono <PHONE>, correo electrónico <EMAIL>.
+Domicilio: Avda. Gran Vía 22, 29602 Marbella.
+Cuenta bancaria asociada a nóminas: <IBAN>.
+Se filtró el siguiente token de acceso: Bearer <SECRET>
+Referencia interna no sensible: 26288475S (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: C72363359.
+El titular <PERSON> confirmó la recepción del expediente.
+
+Expediente nº 0014 — Departamento de Dirección General.
+Titular: <PERSON>, con documento de identidad <DNI_NIE>.
+Contacto: teléfono <PHONE>, correo electrónico <EMAIL>.
+Domicilio: Paseo Colón 191, 50001 Zaragoza.
+Cuenta bancaria asociada a nóminas: <IBAN>.
+El registro del incidente contiene: {"user": "josé", "password": "<SECRET>"}
+Referencia interna no sensible: 55076693X (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: J20814950.
+
+Expediente nº 0015 — Departamento de Dirección General.
+Titular: <PERSON>, con documento de identidad <DNI_NIE>.
+Contacto: teléfono <PHONE>, correo electrónico <EMAIL>.
+Domicilio: Avda. Miguel Hernández 17, 29602 Marbella.
+Cuenta bancaria asociada a nóminas: <IBAN>.
+El CVV de la tarjeta es <SECRET>.
+Referencia interna no sensible: 62343121Z (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: J83300637.
+
+Expediente nº 0016 — Departamento de Logística.
+Titular: <PERSON>, con documento de identidad <DNI_NIE>.
+Contacto: teléfono <PHONE>, correo electrónico <EMAIL>.
+Domicilio: Paseo Goya 100, 41001 Sevilla.
+Cuenta bancaria asociada a nóminas: <IBAN>.
+Durante la auditoría se detectó que la contraseña V4l3nc!a7032# quedó expuesta en un registro del sistema.
+Referencia interna no sensible: 71968116M (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: A44917589.
+
+Expediente nº 0017 — Departamento de Auditoría Interna.
+Titular: <PERSON>, con documento de identidad <DNI_NIE>.
+Contacto: teléfono <PHONE>, correo electrónico <EMAIL>.
+Domicilio: Plaza Mayor 72, 46100 Burjassot.
+Cuenta bancaria asociada a nóminas: <IBAN>.
+El PIN de la tarjeta corporativa asociada es 3068.
+Referencia interna no sensible: 73560289E (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: B85694715.
+
+Expediente nº 0018 — Departamento de Jurídico.
+Titular: RUBÉN etxebarria torres, con documento de identidad <DNI_NIE>.
+Contacto: teléfono <PHONE>, correo electrónico <EMAIL>.
+Domicilio: Urb. Diagonal 192, 08013 Barcelona.
+Cuenta bancaria asociada a nóminas: <IBAN>.
+El PIN de la tarjeta corporativa asociada es 2669.
+Referencia interna no sensible: 50477742E (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: B85958181.
+Esperanza es la palabra que resume el balance anual del departamento.
+
+Expediente nº 0019 — Departamento de Dirección General.
+Titular: <PERSON>, con documento de identidad <DNI_NIE>.
+Contacto: teléfono <PHONE>, correo electrónico <EMAIL>.
+Domicilio: Plaza Dalí 130, 29602 Marbella.
+Cuenta bancaria asociada a nóminas: <IBAN>.
+La clave de API comprometida fue <SECRET>.
+Referencia interna no sensible: 96691619Q (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: H12314351.
+
+Expediente nº 0020 — Departamento de Dirección General.
+Titular: <PERSON>, con documento de identidad <DNI_NIE>.
+Contacto: teléfono <PHONE>, correo electrónico <EMAIL>.
+Domicilio: Avda. Cervantes 170, 29602 Marbella.
+Cuenta bancaria asociada a nóminas: ES0166327971055765886778.
+El CVV de la tarjeta es <SECRET>.
+Referencia interna no sensible: 43742830P (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: B35848226.
+
+
+SECCIÓN SEGUNDA: INCIDENCIAS DE SEGURIDAD DETECTADAS
+
+Expediente nº 0021 — Departamento de Atención al Cliente.
+Titular: Dña. <PERSON>, con documento de identidad <DNI_NIE>.
+Contacto: teléfono <PHONE>, correo electrónico <EMAIL>.
+Domicilio: <PERSON> 71, 08013 Barcelona.
+Cuenta bancaria asociada a nóminas: <IBAN>.
+Durante la auditoría se detectó que la contraseña Tr0ub4dor9076& quedó expuesta en un registro del sistema.
+Referencia interna no sensible: 26948946K (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: H23769080.
+
+Expediente nº 0022 — Departamento de Auditoría Interna.
+Titular: <PERSON>, con documento de identidad <DNI_NIE>.
+Contacto: teléfono <PHONE>, correo electrónico <EMAIL>.
+Domicilio: Plaza Colón 14, 41001 Sevilla.
+Cuenta bancaria asociada a nóminas: <IBAN>.
+Durante la auditoría se detectó que la contraseña Azul1950 quedó expuesta en un registro del sistema.
+Referencia interna no sensible: 91378577C (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: D80138498.
+
+Expediente nº 0023 — Departamento de Logística.
+Titular: consuelo rubio rubio, con documento de identidad <DNI_NIE>.
+Contacto: teléfono <PHONE>, correo electrónico <EMAIL>.
+Domicilio: <PERSON> 146, 50001 Zaragoza.
+Cuenta bancaria asociada a nóminas: <IBAN>.
+El PIN de la tarjeta corporativa asociada es 1043.
+Referencia interna no sensible: 64830300Z (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: H49092160.
+
+Expediente nº 0024 — Departamento de Logística.
+Titular: <PERSON>, con documento de identidad <DNI_NIE>.
+Contacto: teléfono <PHONE>, correo electrónico <EMAIL>.
+Domicilio: Paseo Dalí 176, 29602 Marbella.
+Cuenta bancaria asociada a nóminas: <IBAN>.
+Durante la auditoría se detectó que la contraseña Tr0ub4dor2728& quedó expuesta en un registro del sistema.
+Referencia interna no sensible: 89865458H (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: E68942178.
+<PERSON> es también el nombre del programa de bienestar laboral.
+
+Expediente nº 0025 — Departamento de Dirección General.
+Titular: <PERSON>, con documento de identidad <DNI_NIE>.
+Contacto: teléfono <PHONE>, correo electrónico <EMAIL>.
+Domicilio: Urb. Velázquez 127, 46100 Burjassot.
+Cuenta bancaria asociada a nóminas: <IBAN>.
+La clave de API comprometida fue <SECRET>.
+Referencia interna no sensible: 82825679S (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: G17275149.
+
+Expediente nº 0026 — Departamento de Auditoría Interna.
+Titular: <PERSON>, con documento de identidad <DNI_NIE>.
+Contacto: teléfono <PHONE>, correo electrónico <EMAIL>.
+Domicilio: Paseo Goya 53, 29602 Marbella.
+Cuenta bancaria asociada a nóminas: <IBAN>.
+La cadena de conexión filtrada fue postgres://carmen:<SECRET>@10.20.166.214:5432/core.
+Referencia interna no sensible: 30665654Q (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: E78299645.
+La cuenta bancaria es ES60 2038
+5778 9830 0076 0236.
+
+Expediente nº 0027 — Departamento de Auditoría Interna.
+Titular: <PERSON>, con documento de identidad <DNI_NIE>.
+Contacto: teléfono <PHONE>, correo electrónico <EMAIL>.
+Domicilio: <PERSON> 38, 08013 Barcelona.
+Cuenta bancaria asociada a nóminas: <IBAN>.
+El CVV de la tarjeta es <SECRET>.
+Referencia interna no sensible: 88777447L (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: H29944139.
+
+Expediente nº 0028 — Departamento de Jurídico.
+Titular: <PERSON>, con documento de identidad <DNI_NIE>.
+Contacto: teléfono <PHONE>, correo electrónico <EMAIL>.
+Domicilio: Urb. Velázquez 97, 46100 Burjassot.
+Cuenta bancaria asociada a nóminas: <IBAN>.
+La cadena de conexión filtrada fue postgres://colón:<SECRET>@10.20.127.247:5432/core.
+Referencia interna no sensible: 14968688G (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: J89212676.
+
+Expediente nº 0029 — Departamento de Auditoría Interna.
+Titular: Sr. <PERSON>, con documento de identidad <DNI_NIE>.
+Contacto: teléfono <PHONE>, correo electrónico <EMAIL>.
+Domicilio: <PERSON> 105, 28001 Madrid.
+Cuenta bancaria asociada a nóminas: <IBAN>.
+Se filtró el siguiente token de acceso: Bearer <SECRET>
+Referencia interna no sensible: 58112135B (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: G29538047.
+
+Expediente nº 0030 — Departamento de Atención al Cliente.
+Titular: <PERSON>, con documento de identidad <DNI_NIE>.
+Contacto: teléfono <PHONE>, correo electrónico <EMAIL>.
+Domicilio: <PERSON> 157, 08013 Barcelona.
+Cuenta bancaria asociada a nóminas: <IBAN>.
+Durante la auditoría se detectó que la contraseña Qu4s4r4722# quedó expuesta en un registro del sistema.
+Referencia interna no sensible: 19913576Z (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: F88862539.
+La empresa BANCO SANTANDER SA gestiona la nómina de toda la plantilla.
+
+Expediente nº 0031 — Departamento de Auditoría Interna.
+Titular: <PERSON>, con documento de identidad <DNI_NIE>.
+Contacto: teléfono <PHONE>, correo electrónico <EMAIL>.
+Domicilio: Avda. Mayor 124, 46100 Burjassot.
+Cuenta bancaria asociada a nóminas: <IBAN>.
+El registro del incidente contiene: {"user": "raúl", "password": "<SECRET>"}
+Referencia interna no sensible: 48412328F (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: F39394291.
+
+Expediente nº 0032 — Departamento de Finanzas.
+Titular: <PERSON>, con documento de identidad <DNI_NIE>.
+Contacto: teléfono <PHONE>, correo electrónico <EMAIL>.
+Domicilio: <PERSON> 80, 29602 Marbella.
+Cuenta bancaria asociada a nóminas: <IBAN>.
+El CVV de la tarjeta es <SECRET>.
+Referencia interna no sensible: 77349752P (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: C44489940.
+
+Expediente nº 0033 — Departamento de Finanzas.
+Titular: <PERSON>, con documento de identidad <DNI_NIE>.
+Contacto: teléfono <PHONE>, correo electrónico <EMAIL>.
+Domicilio: Calle Colón 194, 41001 Sevilla.
+Cuenta bancaria asociada a nóminas: <IBAN>.
+El CVV de la tarjeta es <SECRET>.
+Referencia interna no sensible: 45186708L (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: G95704631.
+
+Expediente nº 0034 — Departamento de Auditoría Interna.
+Titular: <PERSON>, con documento de identidad <DNI_NIE>.
+Contacto: teléfono <PHONE>, correo electrónico <EMAIL>.
+Domicilio: Urb. Velázquez 84, 28001 Madrid.
+Cuenta bancaria asociada a nóminas: <IBAN>.
+El CVV de la tarjeta es <SECRET>.
+Referencia interna no sensible: 25585427A (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: D82148284.
+
+Expediente nº 0035 — Departamento de Jurídico.
+Titular: <PERSON>, con documento de identidad <DNI_NIE>.
+Contacto: teléfono <PHONE>, correo electrónico <EMAIL>.
+Domicilio: <PERSON> 108, 29602 Marbella.
+Cuenta bancaria asociada a nóminas: <IBAN>.
+Se filtró el siguiente token de acceso: Bearer <SECRET>
+Referencia interna no sensible: 37542226W (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: J37804191.
+
+Expediente nº 0036 — Departamento de Atención al Cliente.
+Titular: <PERSON>, con documento de identidad <DNI_NIE>.
+Contacto: teléfono <PHONE>, correo electrónico <EMAIL>.
+Domicilio: <PERSON> 38, 50001 Zaragoza.
+Cuenta bancaria asociada a nóminas: <IBAN>.
+El PIN de la tarjeta corporativa asociada es 7897.
+Referencia interna no sensible: 80610004A (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: B73920651.
+ARTÍCULO QUINTO: ningún expediente puede divulgarse fuera de la organización.
+
+Expediente nº 0037 — Departamento de Finanzas.
+Titular: D. <PERSON>, con documento de identidad <DNI_NIE>.
+Contacto: teléfono <PHONE>, correo electrónico <EMAIL>.
+Domicilio: Urb. Miguel Hernández 158, 41001 Sevilla.
+Cuenta bancaria asociada a nóminas: <IBAN>.
+Se filtró el siguiente token de acceso: Bearer <SECRET>
+Referencia interna no sensible: 40667888Z (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: F70867592.
+
+Expediente nº 0038 — Departamento de Jurídico.
+Titular: <PERSON>, con documento de identidad <DNI_NIE>.
+Contacto: teléfono <PHONE>, correo electrónico <EMAIL>.
+Domicilio: Plaza Gran Vía 66, 41001 Sevilla.
+Cuenta bancaria asociada a nóminas: <IBAN>.
+La clave de API comprometida fue <SECRET>.
+Referencia interna no sensible: 51471222B (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: F10819505.
+
+Expediente nº 0039 — Departamento de Finanzas.
+Titular: <PERSON>, con documento de identidad <DNI_NIE>.
+Contacto: teléfono <PHONE>, correo electrónico <EMAIL>.
+Domicilio: Ronda Gran Vía 8, 08013 Barcelona.
+Cuenta bancaria asociada a nóminas: <IBAN>.
+La cadena de conexión filtrada fue postgres://diego:<SECRET>@10.20.41.194:5432/core.
+Referencia interna no sensible: 92924837R (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: B46521025.
+Reside en Calle
+Miguel Hernández, sin más datos adicionales.
+
+Expediente nº 0040 — Departamento de Auditoría Interna.
+Titular: <PERSON>, con documento de identidad <DNI_NIE>.
+Contacto: teléfono <PHONE>, correo electrónico <EMAIL>.
+Domicilio: Plaza Miguel Hernández 194, 41001 Sevilla.
+Cuenta bancaria asociada a nóminas: <IBAN>.
+Durante la auditoría se detectó que la contraseña Tr0ub4dor3359& quedó expuesta en un registro del sistema.
+Referencia interna no sensible: 38351344G (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: E48848936.
+
+
+SECCIÓN TERCERA: AUDITORÍA DE CREDENCIALES Y ACCESOS
+
+Expediente nº 0041 — Departamento de Auditoría Interna.
+Titular: <PERSON>, con documento de identidad <DNI_NIE>.
+Contacto: teléfono <PHONE>, correo electrónico <EMAIL>.
+Domicilio: Paseo Colón 34, 29602 Marbella.
+Cuenta bancaria asociada a nóminas: <IBAN>.
+Se filtró el siguiente token de acceso: Bearer <SECRET>
+Referencia interna no sensible: 25304396V (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: J36025314.
+
+Expediente nº 0042 — Departamento de Sistemas.
+Titular: MONTSERRAT blanco moreno, con documento de identidad <DNI_NIE>.
+Contacto: teléfono <PHONE>, correo electrónico <EMAIL>.
+Domicilio: Avda. Cervantes 51, 28001 Madrid.
+Cuenta bancaria asociada a nóminas: <IBAN>.
+La clave de API comprometida fue <SECRET>.
+Referencia interna no sensible: 56095437A (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: J96721710.
+AVISO IMPORTANTE para todos los empleados del departamento de Sistemas.
+
+Expediente nº 0043 — Departamento de Auditoría Interna.
+Titular: <PERSON>, con documento de identidad <DNI_NIE>.
+Contacto: teléfono <PHONE>, correo electrónico <EMAIL>.
+Domicilio: Urb. Velázquez 157, 41001 Sevilla.
+Cuenta bancaria asociada a nóminas: <IBAN>.
+El CVV de la tarjeta es <SECRET>.
+Referencia interna no sensible: 98122539C (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: C54743095.
+
+Expediente nº 0044 — Departamento de Logística.
+Titular: <PERSON>, con documento de identidad <DNI_NIE>.
+Contacto: teléfono <PHONE>, correo electrónico <EMAIL>.
+Domicilio: Ronda Gran Vía 101, 29602 Marbella.
+Cuenta bancaria asociada a nóminas: <IBAN>.
+La clave de API comprometida fue <SECRET>.
+Referencia interna no sensible: 81673763P (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: E72950208.
+
+Expediente nº 0045 — Departamento de Logística.
+Titular: Dra. <PERSON>, con documento de identidad <DNI_NIE>.
+Contacto: teléfono <PHONE>, correo electrónico <EMAIL>.
+Domicilio: Urb. Velázquez 108, 41001 Sevilla.
+Cuenta bancaria asociada a nóminas: <IBAN>.
+El PIN de la tarjeta corporativa asociada es 5469.
+Referencia interna no sensible: 70306604Q (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: C68716573.
+
+Expediente nº 0046 — Departamento de Jurídico.
+Titular: <PERSON>, con documento de identidad <DNI_NIE>.
+Contacto: teléfono <PHONE>, correo electrónico <EMAIL>.
+Domicilio: Paseo Goya 102, 28001 Madrid.
+Cuenta bancaria asociada a nóminas: <IBAN>.
+El registro del incidente contiene: {"user": "<PERSON>", "password": "<SECRET>"}
+Referencia interna no sensible: 15140967D (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: H28628439.
+
+Expediente nº 0047 — Departamento de Finanzas.
+Titular: <PERSON>, con documento de identidad <DNI_NIE>.
+Contacto: teléfono <PHONE>, correo electrónico <EMAIL>.
+Domicilio: Plaza Miguel Hernández 39, 28001 Madrid.
+Cuenta bancaria asociada a nóminas: <IBAN>.
+La cadena de conexión filtrada fue postgres://jose:<SECRET>@10.20.215.232:5432/core.
+Referencia interna no sensible: 77085942C (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: J12205915.
+
+Expediente nº 0048 — Departamento de Logística.
+Titular: <PERSON>, con documento de identidad <DNI_NIE>.
+Contacto: teléfono <PHONE>, correo electrónico <EMAIL>.
+Domicilio: Calle Diagonal 91, 41001 Sevilla.
+Cuenta bancaria asociada a nóminas: <IBAN>.
+Durante la auditoría se detectó que la contraseña N0v46126& quedó expuesta en un registro del sistema.
+Referencia interna no sensible: 12179995N (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: B56278607.
+La Dra. estuvo presente durante toda la auditoría, sin más detalles que añadir.
+
+Expediente nº 0049 — Departamento de Atención al Cliente.
+Titular: <PERSON>, con documento de identidad <DNI_NIE>.
+Contacto: teléfono <PHONE>, correo electrónico <EMAIL>.
+Domicilio: Plaza Velázquez 87, 28001 Madrid.
+Cuenta bancaria asociada a nóminas: <IBAN>.
+El PIN de la tarjeta corporativa asociada es 1717.
+Referencia interna no sensible: 36772387R (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: F51617680.
+
+Expediente nº 0050 — Departamento de Auditoría Interna.
+Titular: <PERSON> delgado colón, con documento de identidad <DNI_NIE>.
+Contacto: teléfono <PHONE>, correo electrónico <EMAIL>.
+Domicilio: Calle Gran Vía 49, 46100 Burjassot.
+Cuenta bancaria asociada a nóminas: <IBAN>.
+La cadena de conexión filtrada fue postgres://maría:<SECRET>@10.20.21.111:5432/core.
+Referencia interna no sensible: 90859912M (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: J49428661.
+
+Expediente nº 0051 — Departamento de Jurídico.
+Titular: <PERSON>, con documento de identidad <DNI_NIE>.
+Contacto: teléfono <PHONE>, correo electrónico <EMAIL>.
+Domicilio: Plaza Cervantes 115, 29602 Marbella.
+Cuenta bancaria asociada a nóminas: <IBAN>.
+Se filtró el siguiente token de acceso: <PERSON> <SECRET>
+Referencia interna no sensible: 59790013B (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: H20319387.
+
+Expediente nº 0052 — Departamento de Dirección General.
+Titular: <PERSON>, con documento de identidad <DNI_NIE>.
+Contacto: teléfono <PHONE>, correo electrónico <EMAIL>.
+Domicilio: <PERSON> 64, 46100 Burjassot.
+Cuenta bancaria asociada a nóminas: <IBAN>.
+Se filtró el siguiente token de acceso: Bearer <SECRET>
+Referencia interna no sensible: 36975128G (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: D76306502.
+El titular <PERSON> confirmó la recepción del expediente.
+
+Expediente nº 0053 — Departamento de Atención al Cliente.
+Titular: Dra. <PERSON>, con documento de identidad <DNI_NIE>.
+Contacto: teléfono <PHONE>, correo electrónico <EMAIL>.
+Domicilio: <PERSON> 80, 50001 Zaragoza.
+Cuenta bancaria asociada a nóminas: <IBAN>.
+La clave de API comprometida fue <SECRET>.
+Referencia interna no sensible: 85647532R (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: A20901547.
+
+Expediente nº 0054 — Departamento de Dirección General.
+Titular: <PERSON>, con documento de identidad <DNI_NIE>.
+Contacto: teléfono <PHONE>, correo electrónico <EMAIL>.
+Domicilio: <PERSON> 128, 50001 Zaragoza.
+Cuenta bancaria asociada a nóminas: <IBAN>.
+Se filtró el siguiente token de acceso: Bearer <SECRET>
+Referencia interna no sensible: 31434525X (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: F35479101.
+El Sr. llegó tarde a la reunión de cierre del expediente.
+
+Expediente nº 0055 — Departamento de Auditoría Interna.
+Titular: <PERSON>, con documento de identidad <DNI_NIE>.
+Contacto: teléfono <PHONE>, correo electrónico <EMAIL>.
+Domicilio: Plaza Serrano 6, 41001 Sevilla.
+Cuenta bancaria asociada a nóminas: <IBAN>.
+La cadena de conexión filtrada fue postgres://isabel:<SECRET>@10.20.217.28:5432/core.
+Referencia interna no sensible: 67838146G (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: E59093843.
+
+Expediente nº 0056 — Departamento de Dirección General.
+Titular: <PERSON>, con documento de identidad <DNI_NIE>.
+Contacto: teléfono <PHONE>, correo electrónico <EMAIL>.
+Domicilio: Urb. Velázquez 50, 28001 Madrid.
+Cuenta bancaria asociada a nóminas: <IBAN>.
+Se filtró el siguiente token de acceso: Bearer <SECRET>
+Referencia interna no sensible: 89688374X (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: J78412668.
+
+Expediente nº 0057 — Departamento de Recursos Humanos.
+Titular: <PERSON>, con documento de identidad <DNI_NIE>.
+Contacto: teléfono <PHONE>, correo electrónico <EMAIL>.
+Domicilio: Plaza Gran Vía 29, 46100 Burjassot.
+Cuenta bancaria asociada a nóminas: <IBAN>.
+La clave de API comprometida fue <SECRET>.
+Referencia interna no sensible: 91883092Q (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: D43087238.
+
+Expediente nº 0058 — Departamento de Logística.
+Titular: <PERSON>, con documento de identidad <DNI_NIE>.
+Contacto: teléfono <PHONE>, correo electrónico <EMAIL>.
+Domicilio: <PERSON> 177, 46100 Burjassot.
+Cuenta bancaria asociada a nóminas: <IBAN>.
+El registro del incidente contiene: {"user": "adrián", "password": "<SECRET>"}
+Referencia interna no sensible: 98043078P (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: H38720823.
+
+Expediente nº 0059 — Departamento de Logística.
+Titular: <PERSON>, con documento de identidad <DNI_NIE>.
+Contacto: teléfono <PHONE>, correo electrónico <EMAIL>.
+Domicilio: Calle Diagonal 190, 08013 Barcelona.
+Cuenta bancaria asociada a nóminas: <IBAN>.
+Se filtró el siguiente token de acceso: Bearer <SECRET>
+Referencia interna no sensible: 33496796Z (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: C14877451.
+
+Expediente nº 0060 — Departamento de Logística.
+Titular: <PERSON>, con documento de identidad <DNI_NIE>.
+Contacto: teléfono <PHONE>, correo electrónico <EMAIL>.
+Domicilio: <PERSON> 146, 28001 Madrid.
+Cuenta bancaria asociada a nóminas: <IBAN>.
+El CVV de la tarjeta es <SECRET>.
+Referencia interna no sensible: 71594457K (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: E34991216.
+No debe anonimizarse el UUID 550e8400-e29b-41d4-a716-446655440000 del sistema.
+
+
+SECCIÓN CUARTA: REGISTRO DE DOMICILIOS Y CONTACTO
+
+Expediente nº 0061 — Departamento de Sistemas.
+Titular: D. <PERSON>, con documento de identidad <DNI_NIE>.
+Contacto: teléfono <PHONE>, correo electrónico <EMAIL>.
+Domicilio: Urb. Gran Vía 104, 08013 Barcelona.
+Cuenta bancaria asociada a nóminas: <IBAN>.
+Se filtró el siguiente token de acceso: Bearer <SECRET>
+Referencia interna no sensible: 39410942G (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: H30560218.
+
+Expediente nº 0062 — Departamento de Auditoría Interna.
+Titular: Milagros del <PERSON>, con documento de identidad <DNI_NIE>.
+Contacto: teléfono <PHONE>, correo electrónico <EMAIL>.
+Domicilio: <PERSON> 196, 50001 Zaragoza.
+Cuenta bancaria asociada a nóminas: <IBAN>.
+La clave de API comprometida fue <SECRET>.
+Referencia interna no sensible: 96104027C (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: G60259293.
+
+Expediente nº 0063 — Departamento de Dirección General.
+Titular: consuelo rubio ortega, con documento de identidad <DNI_NIE>.
+Contacto: teléfono <PHONE>, correo electrónico <EMAIL>.
+Domicilio: Ronda Gran Vía 139, 28001 Madrid.
+Cuenta bancaria asociada a nóminas: <IBAN>.
+Se filtró el siguiente token de acceso: Bearer <SECRET>
+Referencia interna no sensible: 16533225F (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: A63991141.
+
+Expediente nº 0064 — Departamento de Sistemas.
+Titular: <PERSON>, con documento de identidad <DNI_NIE>.
+Contacto: teléfono <PHONE>, correo electrónico <EMAIL>.
+Domicilio: <PERSON> 75, 28001 Madrid.
+Cuenta bancaria asociada a nóminas: ES0059443347062323875625.
+Durante la auditoría se detectó que la contraseña S3cr3tP@ss7009 quedó expuesta en un registro del sistema.
+Referencia interna no sensible: 16292676N (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: G80392240.
+
+Expediente nº 0065 — Departamento de Atención al Cliente.
+Titular: <PERSON>, con documento de identidad <DNI_NIE>.
+Contacto: teléfono <PHONE>, correo electrónico <EMAIL>.
+Domicilio: Paseo Colón 194, 46100 Burjassot.
+Cuenta bancaria asociada a nóminas: ES0133658586081492878344.
+Se filtró el siguiente token de acceso: <PERSON> <SECRET>
+Referencia interna no sensible: 54689713D (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: A38428357.
+La cuenta bancaria es ES60 2038
+5778 9830 0076 0236.
+
+Expediente nº 0066 — Departamento de Sistemas.
+Titular: <PERSON>, con documento de identidad <DNI_NIE>.
+Contacto: teléfono <PHONE>, correo electrónico <EMAIL>.
+Domicilio: Urb. Miguel Hernández 102, 29602 Marbella.
+Cuenta bancaria asociada a nóminas: <IBAN>.
+El registro del incidente contiene: {"user": "carmen", "password": "<SECRET>"}
+Referencia interna no sensible: 59755172X (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: G16135823.
+No debe anonimizarse el hash SHA256 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.
+
+Expediente nº 0067 — Departamento de Logística.
+Titular: MORENO <PERSON>, con documento de identidad <DNI_NIE>.
+Contacto: teléfono <PHONE>, correo electrónico <EMAIL>.
+Domicilio: Urb. Diagonal 185, 50001 Zaragoza.
+Cuenta bancaria asociada a nóminas: <IBAN>.
+Se filtró el siguiente token de acceso: Bearer <SECRET>
+Referencia interna no sensible: 30270856T (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: D77878323.
+
+Expediente nº 0068 — Departamento de Auditoría Interna.
+Titular: <PERSON>, con documento de identidad <DNI_NIE>.
+Contacto: teléfono <PHONE>, correo electrónico <EMAIL>.
+Domicilio: Paseo Goya 2, 29602 Marbella.
+Cuenta bancaria asociada a nóminas: <IBAN>.
+El registro del incidente contiene: {"user": "suárez", "password": "<SECRET>"}
+Referencia interna no sensible: 22927031V (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: C42342289.
+
+Expediente nº 0069 — Departamento de Logística.
+Titular: Dr. <PERSON>, con documento de identidad <DNI_NIE>.
+Contacto: teléfono <PHONE>, correo electrónico <EMAIL>.
+Domicilio: Calle Alcalá 104, 41001 Sevilla.
+Cuenta bancaria asociada a nóminas: <IBAN>.
+Durante la auditoría se detectó que la contraseña Tr0ub4dor2817! quedó expuesta en un registro del sistema.
+Referencia interna no sensible: 77089857J (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: F85947990.
+
+Expediente nº 0070 — Departamento de Sistemas.
+Titular: <PERSON>, con documento de identidad <DNI_NIE>.
+Contacto: teléfono <PHONE>, correo electrónico <EMAIL>.
+Domicilio: <PERSON> 122, 08013 Barcelona.
+Cuenta bancaria asociada a nóminas: <IBAN>.
+La cadena de conexión filtrada fue postgres://elena:<SECRET>@10.20.42.145:5432/core.
+Referencia interna no sensible: 42275631H (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: G82553061.
+
+Expediente nº 0071 — Departamento de Finanzas.
+Titular: <PERSON>, con documento de identidad <DNI_NIE>.
+Contacto: teléfono <PHONE>, correo electrónico <EMAIL>.
+Domicilio: <PERSON> 14, 50001 Zaragoza.
+Cuenta bancaria asociada a nóminas: <IBAN>.
+Se filtró el siguiente token de acceso: Bearer <SECRET>
+Referencia interna no sensible: 46207439G (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: C21716836.
+
+Expediente nº 0072 — Departamento de Dirección General.
+Titular: <PERSON>, con documento de identidad <DNI_NIE>.
+Contacto: teléfono <PHONE>, correo electrónico <EMAIL>.
+Domicilio: <PERSON> 91, 28001 Madrid.
+Cuenta bancaria asociada a nóminas: <IBAN>.
+El CVV de la tarjeta es <SECRET>.
+Referencia interna no sensible: 29587040A (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: C68341261.
+El pasaporte español asociado tiene el formato AAA123456, distinto del DNI.
+
+Expediente nº 0073 — Departamento de Auditoría Interna.
+Titular: <PERSON>, con documento de identidad <DNI_NIE>.
+Contacto: teléfono <PHONE>, correo electrónico <EMAIL>.
+Domicilio: Plaza Cervantes 64, 28001 Madrid.
+Cuenta bancaria asociada a nóminas: <IBAN>.
+Se filtró el siguiente token de acceso: Bearer <SECRET>
+Referencia interna no sensible: 62738860B (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: B85678734.
+
+Expediente nº 0074 — Departamento de Recursos Humanos.
+Titular: <PERSON>, con documento de identidad <DNI_NIE>.
+Contacto: teléfono <PHONE>, correo electrónico <EMAIL>.
+Domicilio: Paseo Miguel Hernández 113, 29602 Marbella.
+Cuenta bancaria asociada a nóminas: <IBAN>.
+Se filtró el siguiente token de acceso: Bearer <SECRET>
+Referencia interna no sensible: 96574622E (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: G54506155.
+
+Expediente nº 0075 — Departamento de Finanzas.
+Titular: <PERSON>, con documento de identidad <DNI_NIE>.
+Contacto: teléfono <PHONE>, correo electrónico <EMAIL>.
+Domicilio: <PERSON> 192, 46100 Burjassot.
+Cuenta bancaria asociada a nóminas: <IBAN>.
+Se filtró el siguiente token de acceso: Bearer <SECRET>
+Referencia interna no sensible: 32059232F (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: J33414716.
+
+Expediente nº 0076 — Departamento de Auditoría Interna.
+Titular: <PERSON>, con documento de identidad <DNI_NIE>.
+Contacto: teléfono <PHONE>, correo electrónico <EMAIL>.
+Domicilio: Paseo Gran Vía 48, 08013 Barcelona.
+Cuenta bancaria asociada a nóminas: <IBAN>.
+El PIN de la tarjeta corporativa asociada es 4371.
+Referencia interna no sensible: 47358810W (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: B82060023.
+
+Expediente nº 0077 — Departamento de Auditoría Interna.
+Titular: Sra. <PERSON>, con documento de identidad <DNI_NIE>.
+Contacto: teléfono <PHONE>, correo electrónico <EMAIL>.
+Domicilio: Plaza Gran Vía 126, 28001 Madrid.
+Cuenta bancaria asociada a nóminas: <IBAN>.
+El registro del incidente contiene: {"user": "sra", "password": "<SECRET>"}
+Referencia interna no sensible: 27978165X (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: B42020689.
+
+Expediente nº 0078 — Departamento de Jurídico.
+Titular: <PERSON>, con documento de identidad <DNI_NIE>.
+Contacto: teléfono <PHONE>, correo electrónico <EMAIL>.
+Domicilio: <PERSON> 100, 29602 Marbella.
+Cuenta bancaria asociada a nóminas: <IBAN>.
+El CVV de la tarjeta es <SECRET>.
+Referencia interna no sensible: 35111946B (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: H93135800.
+REGISTRO GENERAL DE ENTRADA Y SALIDA DE DOCUMENTOS del departamento.
+Reside en Calle
+Miguel Hernández, sin más datos adicionales.
+
+Expediente nº 0079 — Departamento de Auditoría Interna.
+Titular: <PERSON>, con documento de identidad <DNI_NIE>.
+Contacto: teléfono <PHONE>, correo electrónico <EMAIL>.
+Domicilio: Avda. Mayor 144, 08013 Barcelona.
+Cuenta bancaria asociada a nóminas: <IBAN>.
+La cadena de conexión filtrada fue postgres://javier:<SECRET>@10.20.71.58:5432/core.
+Referencia interna no sensible: 82156607X (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: C71380637.
+
+Expediente nº 0080 — Departamento de Finanzas.
+Titular: <PERSON>, con documento de identidad <DNI_NIE>.
+Contacto: teléfono <PHONE>, correo electrónico <EMAIL>.
+Domicilio: Urb. Alcalá 139, 46100 Burjassot.
+Cuenta bancaria asociada a nóminas: <IBAN>.
+El CVV de la tarjeta es <SECRET>.
+Referencia interna no sensible: 21674661S (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: B41802361.
+
+
+ANEXO TÉCNICO: REFERENCIAS NO SENSIBLES PARA CONTROL
+
+Expediente nº 0081 — Departamento de Atención al Cliente.
+Titular: <PERSON>, con documento de identidad <DNI_NIE>.
+Contacto: teléfono <PHONE>, correo electrónico <EMAIL>.
+Domicilio: Avda. Miguel Hernández 53, 50001 Zaragoza.
+Cuenta bancaria asociada a nóminas: <IBAN>.
+El CVV de la tarjeta es <SECRET>.
+Referencia interna no sensible: 98032908G (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: C43511112.
+
+Expediente nº 0082 — Departamento de Dirección General.
+Titular: <PERSON> navarro, con documento de identidad <DNI_NIE>.
+Contacto: teléfono <PHONE>, correo electrónico <EMAIL>.
+Domicilio: Avda. Diagonal 162, 41001 Sevilla.
+Cuenta bancaria asociada a nóminas: <IBAN>.
+Durante la auditoría se detectó que la contraseña V4l3nc!a7521& quedó expuesta en un registro del sistema.
+Referencia interna no sensible: 18500100H (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: G39236638.
+
+Expediente nº 0083 — Departamento de Logística.
+Titular: <PERSON>, con documento de identidad <DNI_NIE>.
+Contacto: teléfono <PHONE>, correo electrónico <EMAIL>.
+Domicilio: Plaza Alcalá 141, 46100 Burjassot.
+Cuenta bancaria asociada a nóminas: <IBAN>.
+La cadena de conexión filtrada fue postgres://alonso:<SECRET>@ss7240@10.20.1.254:5432/core.
+Referencia interna no sensible: 67418250F (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: C97241147.
+
+Expediente nº 0084 — Departamento de Finanzas.
+Titular: <PERSON>, con documento de identidad <DNI_NIE>.
+Contacto: teléfono <PHONE>, correo electrónico <EMAIL>.
+Domicilio: Plaza Cervantes 22, 29602 Marbella.
+Cuenta bancaria asociada a nóminas: <IBAN>.
+Se filtró el siguiente token de acceso: Bearer <SECRET>
+Referencia interna no sensible: 29173414W (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: J85603667.
+CONFIDENCIAL INTERNO — esta sección no debe distribuirse fuera de <PERSON>.
+
+Expediente nº 0085 — Departamento de Sistemas.
+Titular: Dr. Ana Muñoz Rubio, con documento de identidad <DNI_NIE>.
+Contacto: teléfono <PHONE>, correo electrónico <EMAIL>.
+Domicilio: <PERSON> 106, 29602 Marbella.
+Cuenta bancaria asociada a nóminas: <IBAN>.
+El CVV de la tarjeta es <SECRET>.
+Referencia interna no sensible: 52211967G (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: D47173969.
+
+Expediente nº 0086 — Departamento de Recursos Humanos.
+Titular: <PERSON>, con documento de identidad <DNI_NIE>.
+Contacto: teléfono <PHONE>, correo electrónico <EMAIL>.
+Domicilio: Plaza Miguel Hernández 133, 29602 Marbella.
+Cuenta bancaria asociada a nóminas: <IBAN>.
+El registro del incidente contiene: {"user": "<PERSON>", "password": "<SECRET>"}
+Referencia interna no sensible: 58465780B (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: C61920550.
+
+Expediente nº 0087 — Departamento de Atención al Cliente.
+Titular: <PERSON>, con documento de identidad <DNI_NIE>.
+Contacto: teléfono <PHONE>, correo electrónico <EMAIL>.
+Domicilio: Calle Goya 151, 41001 Sevilla.
+Cuenta bancaria asociada a nóminas: <IBAN>.
+Durante la auditoría se detectó que la contraseña S3cr3tP@ss4556! quedó expuesta en un registro del sistema.
+Referencia interna no sensible: 51594998W (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: J37272705.
+
+Expediente nº 0088 — Departamento de Dirección General.
+Titular: <PERSON>, con documento de identidad <DNI_NIE>.
+Contacto: teléfono <PHONE>, correo electrónico <EMAIL>.
+Domicilio: Ronda Gran Vía 175, 50001 Zaragoza.
+Cuenta bancaria asociada a nóminas: <IBAN>.
+Durante la auditoría se detectó que la contraseña R0j02887! quedó expuesta en un registro del sistema.
+Referencia interna no sensible: 11699863G (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: A31989243.
+
+Expediente nº 0089 — Departamento de Logística.
+Titular: <PERSON>, con documento de identidad <DNI_NIE>.
+Contacto: teléfono <PHONE>, correo electrónico <EMAIL>.
+Domicilio: Plaza Colón 192, 08013 Barcelona.
+Cuenta bancaria asociada a nóminas: <IBAN>.
+Se filtró el siguiente token de acceso: Bearer <SECRET>
+Referencia interna no sensible: 98007006Z (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: D53191535.
+
+Expediente nº 0090 — Departamento de Logística.
+Titular: <PERSON>, con documento de identidad <DNI_NIE>.
+Contacto: teléfono <PHONE>, correo electrónico <EMAIL>.
+Domicilio: Urb. Alcalá 31, 28001 Madrid.
+Cuenta bancaria asociada a nóminas: <IBAN>.
+La cadena de conexión filtrada fue postgres://hugo:<SECRET>@10.20.23.142:5432/core.
+Referencia interna no sensible: 71303434T (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: F36933626.
+isadora fonseca <PERSON> firmó la recepción del expediente sin más datos.
+
+Expediente nº 0091 — Departamento de Auditoría Interna.
+Titular: RAMOS <PERSON>, con documento de identidad <DNI_NIE>.
+Contacto: teléfono <PHONE>, correo electrónico <EMAIL>.
+Domicilio: Urb. Serrano 198, 46100 Burjassot.
+Cuenta bancaria asociada a nóminas: <IBAN>.
+El registro del incidente contiene: {"user": "ramos", "password": "<SECRET>"}
+Referencia interna no sensible: 37540722V (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: D66346728.
+El titular <PERSON> confirmó la recepción del expediente.
+
+Expediente nº 0092 — Departamento de Logística.
+Titular: <PERSON>, con documento de identidad <DNI_NIE>.
+Contacto: teléfono <PHONE>, correo electrónico <EMAIL>.
+Domicilio: Calle Miguel Hernández 134, 28001 Madrid.
+Cuenta bancaria asociada a nóminas: <IBAN>.
+Se filtró el siguiente token de acceso: Bearer <SECRET>
+Referencia interna no sensible: 70655283D (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: H45568761.
+
+Expediente nº 0093 — Departamento de Logística.
+Titular: Dña. <PERSON>, con documento de identidad <DNI_NIE>.
+Contacto: teléfono <PHONE>, correo electrónico <EMAIL>.
+Domicilio: <PERSON> 11, 29602 Marbella.
+Cuenta bancaria asociada a nóminas: <IBAN>.
+La cadena de conexión filtrada fue postgres://dña:<SECRET>@ss519@10.20.219.116:5432/core.
+Referencia interna no sensible: 84618850H (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: D22713811.
+
+Expediente nº 0094 — Departamento de Finanzas.
+Titular: <PERSON>, con documento de identidad <DNI_NIE>.
+Contacto: teléfono <PHONE>, correo electrónico <EMAIL>.
+Domicilio: Calle Miguel Hernández 34, 28001 Madrid.
+Cuenta bancaria asociada a nóminas: <IBAN>.
+Se filtró el siguiente token de acceso: Bearer <SECRET>
+Referencia interna no sensible: 96876236X (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: H65296657.
+
+Expediente nº 0095 — Departamento de Logística.
+Titular: <PERSON>, con documento de identidad <DNI_NIE>.
+Contacto: teléfono <PHONE>, correo electrónico <EMAIL>.
+Domicilio: Avda. Mayor 52, 41001 Sevilla.
+Cuenta bancaria asociada a nóminas: <IBAN>.
+La clave de API comprometida fue <SECRET>.
+Referencia interna no sensible: 57201978L (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: C85579195.

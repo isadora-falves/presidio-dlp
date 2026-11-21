@@ -1,13 +1,13 @@
 import re
 
-# Palabras y abreviaturas que anteceden el nombre de una vía en España (Calle
-# Goya, Avda. Dalí, Pza. Colón...). spaCy suele etiquetar el nombre de la vía
-# como PERSON cuando coincide con un apellido real (Goya, Dalí, Colón...),
-# así que se usa como guardia de contexto para descartar ese falso positivo,
-# sin inventar una etiqueta nueva que el enunciado no pide.
+# Words and abbreviations that precede a street name in Spain (Calle Goya,
+# Avda. Dalí, Pza. Colón...). spaCy's NER often tags the street name as
+# PERSON when it coincides with a real surname (Goya, Dalí, Colón...), so
+# this is used as a context guard to discard that false positive, without
+# inventing a new label the assignment doesn't ask for.
 #
-# Fuentes de las abreviaturas: guía de abreviaturas de direcciones españolas
-# (https://www.52spain.com/d/79835) y guía de calles en español de CIEE
+# Abbreviation sources: Spanish address abbreviation guide
+# (https://www.52spain.com/d/79835) and CIEE's Spanish street guide
 # (https://www.ciee.org/go-abroad/work/teach-english-abroad/blog/your-guide-spanish-street-abbreviations).
 _ONE_WORD_INDICATORS = {
     "calle", "c/",
@@ -38,7 +38,7 @@ def _words_before(text: str, pos: int, count: int):
 
 
 def is_address_context(text: str, start: int) -> bool:
-    """True si `start` viene justo después de un indicador de tipo de vía."""
+    """True if `start` comes right after a street-type indicator."""
     words = _words_before(text, start, 2)
     if not words:
         return False
@@ -50,7 +50,7 @@ def is_address_context(text: str, start: int) -> bool:
 
 
 def drop_person_in_addresses(text: str, results: list) -> list:
-    """Quita resultados PERSON cuyo inicio cae justo tras un tipo de vía."""
+    """Drop PERSON results that start right after a street-type word."""
     return [
         r for r in results
         if not (r.entity_type == "PERSON" and is_address_context(text, r.start))
@@ -58,12 +58,12 @@ def drop_person_in_addresses(text: str, results: list) -> list:
 
 
 def drop_person_with_digits(text: str, results: list) -> list:
-    """Quita resultados PERSON que contienen algún dígito.
+    """Drop PERSON results that contain a digit.
 
-    Un nombre real nunca lleva dígitos; cuando aparecen es porque el
-    SpacyRecognizer nativo confundió un código alfanumérico desconocido
-    (comprobado: "AAA123456", formato de pasaporte español, se marcaba
-    como PERSON) con un nombre propio.
+    A real name never has digits; when they show up it's because the
+    native SpacyRecognizer confused an unknown alphanumeric code
+    (confirmed: "AAA123456", the Spanish passport format, was tagged
+    PERSON) with a proper noun.
     """
     return [
         r for r in results
@@ -71,19 +71,39 @@ def drop_person_with_digits(text: str, results: list) -> list:
     ]
 
 
-# "D." y "Dña." ya quedan fuera del span de PERSON (probado), pero "Sra."/
-# "Dra." (con punto, del SpacyRecognizer nativo) y "SRA"/"DRA" sin punto
-# (del CasePersonRecognizer) se incluían dentro del span por error.
+# "D." and "Dña." already fall outside the PERSON span (confirmed), but
+# "Sra."/"Dra." (with a period, from the native SpacyRecognizer) and
+# "SRA"/"DRA" without a period (from CasePersonRecognizer) were
+# mistakenly included inside the span.
 _HONORIFIC_PREFIX = re.compile(
     r"^(?:sr|sra|srta|dr|dra|d|dña|lic|ing|prof|sta)\.?\s+", re.IGNORECASE
 )
 
 
 def trim_person_honorifics(text: str, results: list) -> list:
-    """Recorta un honorífico inicial ("Sra.", "DRA"...) del span de PERSON."""
+    """Trim a leading honorific ("Sra.", "DRA"...) off a PERSON span."""
     for r in results:
         if r.entity_type == "PERSON":
             m = _HONORIFIC_PREFIX.match(text[r.start:r.end])
             if m:
                 r.start += m.end()
     return results
+
+
+def drop_phone_inside_iban(results: list) -> list:
+    """Drop PHONE results whose span falls entirely inside an IBAN.
+
+    After widening the PhoneRecognizer to all of Europe (not just Spain),
+    some country (confirmed: Germany) accepts as "valid" a chunk of an
+    IBAN split by a line break ("0418 4502 0005 1332", inside "ES91
+    2100\\n0418 4502 0005 1332") — Presidio doesn't drop overlaps between
+    different entity types on its own.
+    """
+    iban_spans = [(r.start, r.end) for r in results if r.entity_type == "IBAN_CODE"]
+    return [
+        r for r in results
+        if not (
+            r.entity_type == "PHONE_NUMBER"
+            and any(r.start >= s and r.end <= e for s, e in iban_spans)
+        )
+    ]

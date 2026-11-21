@@ -1,0 +1,808 @@
+INFORME CONFIDENCIAL — USO INTERNO
+ARCANUBE S.A. — AUDITORÍA DE PROTECCIÓN DE DATOS 2026
+Documento generado para pruebas de anonimización. Todos los datos de personas, cuentas,
+contraseñas y tokens de este archivo son ficticios y se generaron solo para este ejercicio.
+
+
+SECCIÓN PRIMERA: EXPEDIENTES DE PERSONAL
+
+Expediente nº 0001 — Departamento de Sistemas.
+Titular: SERGIO FERNÁNDEZ DOMÍNGUEZ, con documento de identidad 11668732G.
+Contacto: teléfono +34-604-26-57-99, correo electrónico sergio.fernández1@arcanube.example.com.
+Domicilio: Avda. Dalí 174, 08013 Barcelona.
+Cuenta bancaria asociada a nóminas: ES35 2535 4582 0813 5856 5075.
+El registro del incidente contiene: {"user": "sergio", "password": "N0v43621"}
+Referencia interna no sensible: 89089901P (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: A31429110.
+
+Expediente nº 0002 — Departamento de Atención al Cliente.
+Titular: PAZ serrano domínguez, con documento de identidad x 6022674 d.
+Contacto: teléfono (91) 370 15 68, correo electrónico paz.colón2@arcanube.example.com.
+Domicilio: Plaza Dalí 24, 08013 Barcelona.
+Cuenta bancaria asociada a nóminas: ES0830457201047992837885.
+La clave de API comprometida fue sk-proj-8fdb46977017cf454b42d1e85df6a760.
+Referencia interna no sensible: 18883684Y (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: F38538251.
+
+Expediente nº 0003 — Departamento de Atención al Cliente.
+Titular: DELGADO Ana Isabel Etxebarria, con documento de identidad 72340307V.
+Contacto: teléfono (91) 538 84 61, correo electrónico delgado.suárez3@arcanube.example.com.
+Domicilio: Avda. Miguel Hernández 191, 46100 Burjassot.
+Cuenta bancaria asociada a nóminas: ES9345933266021748336605.
+La cadena de conexión filtrada fue postgres://delgado:V4l3nc!a2514#@10.20.203.175:5432/core.
+Referencia interna no sensible: 66661351C (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: B61642594.
+
+Expediente nº 0004 — Departamento de Logística.
+Titular: ETXEBARRIA DALÍ, Consuelo, con documento de identidad 91497616M.
+Contacto: teléfono (91) 448 24 47, correo electrónico etxebarria.ortiz4@arcanube.example.com.
+Domicilio: Calle Gran Vía 185, 50001 Zaragoza.
+Cuenta bancaria asociada a nóminas: ES2135918433074838597223.
+La clave de API comprometida fue sk-proj-87e43c6262afa887ea89b1b66c12e70d.
+Referencia interna no sensible: 82383095Y (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: E63551839.
+
+Expediente nº 0005 — Departamento de Finanzas.
+Titular: Dra. Esperanza Rubio Dalí, con documento de identidad 78961459K.
+Contacto: teléfono 678979095, correo electrónico dra.gutiérrez5@arcanube.example.com.
+Domicilio: Avda. Dalí 87, 08013 Barcelona.
+Cuenta bancaria asociada a nóminas: ES5311172163018125286089.
+La cadena de conexión filtrada fue postgres://dra:C4mpe0n1170#@10.20.72.172:5432/core.
+Referencia interna no sensible: 75151231Y (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: J27758595.
+
+Expediente nº 0006 — Departamento de Dirección General.
+Titular: Jose Antonio del Carmen Navarro-Puig, con documento de identidad y 7106470 j.
+Contacto: teléfono +34-662-68-29-89, correo electrónico jose.martínez6@arcanube.example.com.
+Domicilio: Calle Dalí 169, 08013 Barcelona.
+Cuenta bancaria asociada a nóminas: ES88 2612 1993 0414 7008 5539.
+La clave de API comprometida fue sk-proj-10ed8172a97987c1d0a09e6109925ce9.
+Referencia interna no sensible: 87736262H (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: A52091325.
+Victoria es uno de los valores centrales que promueve la compañía este año.
+
+Expediente nº 0007 — Departamento de Atención al Cliente.
+Titular: javier martínez puig, con documento de identidad 79864260A.
+Contacto: teléfono +34 690 625 494, correo electrónico javier.navarro7@arcanube.example.com.
+Domicilio: Urb. Dalí 48, 28001 Madrid.
+Cuenta bancaria asociada a nóminas: ES1276152964084344673727.
+La clave de API comprometida fue sk-proj-b43fe4fec4188a33b22cfbde12e96242.
+Referencia interna no sensible: 99038526A (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: C45496015.
+
+Expediente nº 0008 — Departamento de Logística.
+Titular: Sergio Gómez Moreno, con documento de identidad X-4428914-B.
+Contacto: teléfono +34-633-70-49-23, correo electrónico sergio.martínez8@arcanube.example.com.
+Domicilio: Urb. Miguel Hernández 184, 46100 Burjassot.
+Cuenta bancaria asociada a nóminas: ES61 2512 7939 0158 8569 9023.
+La cadena de conexión filtrada fue postgres://sergio:S3cr3tP@ss4301#@10.20.190.114:5432/core.
+Referencia interna no sensible: 84045292Z (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: J11297845.
+
+Expediente nº 0009 — Departamento de Recursos Humanos.
+Titular: SERGIO SÁNCHEZ MORENO, con documento de identidad x 0701771 h.
+Contacto: teléfono (91) 915 15 55, correo electrónico sergio.alonso9@arcanube.example.com.
+Domicilio: Urb. Velázquez 38, 46100 Burjassot.
+Cuenta bancaria asociada a nóminas: ES9250882684089905182982.
+El PIN de la tarjeta corporativa asociada es 3662.
+Referencia interna no sensible: 33763566Z (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: A34073380.
+
+Expediente nº 0010 — Departamento de Logística.
+Titular: ÍÑIGO castro navarro, con documento de identidad 63174945V.
+Contacto: teléfono 626786211, correo electrónico íñigo.etxebarria10@arcanube.example.com.
+Domicilio: Ronda Dalí 98, 08013 Barcelona.
+Cuenta bancaria asociada a nóminas: ES41 6728 6000 0384 7423 0394.
+El PIN de la tarjeta corporativa asociada es 7528.
+Referencia interna no sensible: 54058573P (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: B47463522.
+
+Expediente nº 0011 — Departamento de Jurídico.
+Titular: ROSTOVA Montserrat Delgado, con documento de identidad 35630292A.
+Contacto: teléfono +34 614 549 543, correo electrónico rostova.ortiz11@arcanube.example.com.
+Domicilio: Calle Cervantes 46, 28001 Madrid.
+Cuenta bancaria asociada a nóminas: ES60 6663 6139 0835 7916 6216.
+Durante la auditoría se detectó que la contraseña N0v437# quedó expuesta en un registro del sistema.
+Referencia interna no sensible: 58884978Z (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: B99152472.
+
+Expediente nº 0012 — Departamento de Logística.
+Titular: GIL RUIZ, Íñigo, con documento de identidad Y-4960271-J.
+Contacto: teléfono 625748341, correo electrónico gil.castro12@arcanube.example.com.
+Domicilio: Plaza Gran Vía 105, 50001 Zaragoza.
+Cuenta bancaria asociada a nóminas: ES1472113851080658753717.
+El CVV de la tarjeta es 393.
+Referencia interna no sensible: 38210242J (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: F72409658.
+Paz es el nombre adoptado para el nuevo protocolo de mediación interna.
+
+Expediente nº 0013 — Departamento de Auditoría Interna.
+Titular: D. Dolores Rubio Alonso, con documento de identidad Z-5623525-F.
+Contacto: teléfono +34 631 523 529, correo electrónico d.ramos13@arcanube.example.com.
+Domicilio: Avda. Gran Vía 22, 29602 Marbella.
+Cuenta bancaria asociada a nóminas: ES69 4680 4262 0151 6328 8045.
+Se filtró el siguiente token de acceso: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJLVC2JSxyjQ312WnXRCI4In0.LVC2JSxyjQ312WnXRCI4
+Referencia interna no sensible: 26288475S (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: C72363359.
+El titular Ana
+García confirmó la recepción del expediente.
+
+Expediente nº 0014 — Departamento de Dirección General.
+Titular: José Luis del Carmen Gil-Rubio, con documento de identidad y 4348512 p.
+Contacto: teléfono 685585469, correo electrónico josé.domínguez14@arcanube.example.com.
+Domicilio: Paseo Colón 191, 50001 Zaragoza.
+Cuenta bancaria asociada a nóminas: ES5795408939045369186404.
+El registro del incidente contiene: {"user": "josé", "password": "R0j03851&"}
+Referencia interna no sensible: 55076693X (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: J20814950.
+
+Expediente nº 0015 — Departamento de Dirección General.
+Titular: marta moreno gutiérrez, con documento de identidad y 5551268 w.
+Contacto: teléfono +34-655-80-42-73, correo electrónico marta.martínez15@arcanube.example.com.
+Domicilio: Avda. Miguel Hernández 17, 29602 Marbella.
+Cuenta bancaria asociada a nóminas: ES03 4388 7883 0717 7675 3852.
+El CVV de la tarjeta es 405.
+Referencia interna no sensible: 62343121Z (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: J83300637.
+
+Expediente nº 0016 — Departamento de Logística.
+Titular: Sofía Mendoza Gutiérrez, con documento de identidad Z-6783308-S.
+Contacto: teléfono 662732043, correo electrónico sofía.díaz16@arcanube.example.com.
+Domicilio: Paseo Goya 100, 41001 Sevilla.
+Cuenta bancaria asociada a nóminas: ES8197511441085919019711.
+Durante la auditoría se detectó que la contraseña V4l3nc!a7032# quedó expuesta en un registro del sistema.
+Referencia interna no sensible: 71968116M (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: A44917589.
+
+Expediente nº 0017 — Departamento de Auditoría Interna.
+Titular: CONSUELO GIL ALONSO, con documento de identidad y 1374158 z.
+Contacto: teléfono +34-602-60-15-80, correo electrónico consuelo.colón17@arcanube.example.com.
+Domicilio: Plaza Mayor 72, 46100 Burjassot.
+Cuenta bancaria asociada a nóminas: ES5318536733012206207369.
+El PIN de la tarjeta corporativa asociada es 3068.
+Referencia interna no sensible: 73560289E (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: B85694715.
+
+Expediente nº 0018 — Departamento de Jurídico.
+Titular: RUBÉN etxebarria torres, con documento de identidad 21980274W.
+Contacto: teléfono (91) 692 13 49, correo electrónico rubén.ortega18@arcanube.example.com.
+Domicilio: Urb. Diagonal 192, 08013 Barcelona.
+Cuenta bancaria asociada a nóminas: ES8874984249098991633696.
+El PIN de la tarjeta corporativa asociada es 2669.
+Referencia interna no sensible: 50477742E (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: B85958181.
+Esperanza es la palabra que resume el balance anual del departamento.
+
+Expediente nº 0019 — Departamento de Dirección General.
+Titular: BLANCO María Colón, con documento de identidad X-7047416-D.
+Contacto: teléfono +34-614-16-51-87, correo electrónico blanco.ortiz19@arcanube.example.com.
+Domicilio: Plaza Dalí 130, 29602 Marbella.
+Cuenta bancaria asociada a nóminas: ES94 6934 8532 0654 0378 6751.
+La clave de API comprometida fue sk-proj-9e62105e77b8d130a7cd6f85ea9b5165.
+Referencia interna no sensible: 96691619Q (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: H12314351.
+
+Expediente nº 0020 — Departamento de Dirección General.
+Titular: VÁZQUEZ GUTIÉRREZ, Pablo, con documento de identidad 49529086N.
+Contacto: teléfono +34-674-28-58-82, correo electrónico vázquez.dalí20@arcanube.example.com.
+Domicilio: Avda. Cervantes 170, 29602 Marbella.
+Cuenta bancaria asociada a nóminas: ES0166327971055765886778.
+El CVV de la tarjeta es 413.
+Referencia interna no sensible: 43742830P (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: B35848226.
+
+
+SECCIÓN SEGUNDA: INCIDENCIAS DE SEGURIDAD DETECTADAS
+
+Expediente nº 0021 — Departamento de Atención al Cliente.
+Titular: Dña. Cristina Ruiz Colón, con documento de identidad 70415568X.
+Contacto: teléfono (91) 952 34 47, correo electrónico dña.gutiérrez21@arcanube.example.com.
+Domicilio: Avda. Serrano 71, 08013 Barcelona.
+Cuenta bancaria asociada a nóminas: ES42 6912 3939 0782 2982 2943.
+Durante la auditoría se detectó que la contraseña Tr0ub4dor9076& quedó expuesta en un registro del sistema.
+Referencia interna no sensible: 26948946K (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: H23769080.
+
+Expediente nº 0022 — Departamento de Auditoría Interna.
+Titular: Ana del Carmen Vázquez-Puig, con documento de identidad Y-1914064-H.
+Contacto: teléfono +34 653 782 042, correo electrónico ana.mendoza22@arcanube.example.com.
+Domicilio: Plaza Colón 14, 41001 Sevilla.
+Cuenta bancaria asociada a nóminas: ES3822131878082165166254.
+Durante la auditoría se detectó que la contraseña Azul1950 quedó expuesta en un registro del sistema.
+Referencia interna no sensible: 91378577C (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: D80138498.
+
+Expediente nº 0023 — Departamento de Logística.
+Titular: consuelo rubio rubio, con documento de identidad 08083974A.
+Contacto: teléfono +34 627 888 820, correo electrónico consuelo.alonso23@arcanube.example.com.
+Domicilio: Paseo Cervantes 146, 50001 Zaragoza.
+Cuenta bancaria asociada a nóminas: ES4653352330032167455507.
+El PIN de la tarjeta corporativa asociada es 1043.
+Referencia interna no sensible: 64830300Z (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: H49092160.
+
+Expediente nº 0024 — Departamento de Logística.
+Titular: María Gutiérrez Vázquez, con documento de identidad 35.507.920-Z.
+Contacto: teléfono 657061186, correo electrónico maría.ruiz24@arcanube.example.com.
+Domicilio: Paseo Dalí 176, 29602 Marbella.
+Cuenta bancaria asociada a nóminas: ES9399224683044378156995.
+Durante la auditoría se detectó que la contraseña Tr0ub4dor2728& quedó expuesta en un registro del sistema.
+Referencia interna no sensible: 89865458H (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: E68942178.
+Consuelo es también el nombre del programa de bienestar laboral.
+
+Expediente nº 0025 — Departamento de Dirección General.
+Titular: SERGIO ETXEBARRIA RAMOS, con documento de identidad x 0668752 g.
+Contacto: teléfono +34-698-58-74-74, correo electrónico sergio.gil25@arcanube.example.com.
+Domicilio: Urb. Velázquez 127, 46100 Burjassot.
+Cuenta bancaria asociada a nóminas: ES8051021423096139224599.
+La clave de API comprometida fue sk-proj-3a6736c21e907910fbc01406abeb677a.
+Referencia interna no sensible: 82825679S (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: G17275149.
+
+Expediente nº 0026 — Departamento de Auditoría Interna.
+Titular: CARMEN dalí suárez, con documento de identidad Z-2198037-R.
+Contacto: teléfono (91) 815 72 25, correo electrónico carmen.fernández26@arcanube.example.com.
+Domicilio: Paseo Goya 53, 29602 Marbella.
+Cuenta bancaria asociada a nóminas: ES10 4920 3594 0629 6486 6596.
+La cadena de conexión filtrada fue postgres://carmen:V4l3nc!a7570!@10.20.166.214:5432/core.
+Referencia interna no sensible: 30665654Q (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: E78299645.
+La cuenta bancaria es ES60 2038
+5778 9830 0076 0236.
+
+Expediente nº 0027 — Departamento de Auditoría Interna.
+Titular: CASTRO Adrián Puig, con documento de identidad x 8526867 p.
+Contacto: teléfono 609369750, correo electrónico castro.domínguez27@arcanube.example.com.
+Domicilio: Paseo Velázquez 38, 08013 Barcelona.
+Cuenta bancaria asociada a nóminas: ES33 7798 6568 0107 4756 8401.
+El CVV de la tarjeta es 957.
+Referencia interna no sensible: 88777447L (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: H29944139.
+
+Expediente nº 0028 — Departamento de Jurídico.
+Titular: COLÓN PUIG, Dolores, con documento de identidad y 3165061 e.
+Contacto: teléfono 676745380, correo electrónico colón.ortega28@arcanube.example.com.
+Domicilio: Urb. Velázquez 97, 46100 Burjassot.
+Cuenta bancaria asociada a nóminas: ES3148267730070548243101.
+La cadena de conexión filtrada fue postgres://colón:N0v46335#@10.20.127.247:5432/core.
+Referencia interna no sensible: 14968688G (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: J89212676.
+
+Expediente nº 0029 — Departamento de Auditoría Interna.
+Titular: Sr. Íñigo Gómez Rubio, con documento de identidad 10.043.277-M.
+Contacto: teléfono +34-635-57-07-55, correo electrónico sr.serrano29@arcanube.example.com.
+Domicilio: Ronda Colón 105, 28001 Madrid.
+Cuenta bancaria asociada a nóminas: ES4975122315096895327139.
+Se filtró el siguiente token de acceso: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ7M3EHMoQrof8VRgksbudIn0.7M3EHMoQrof8VRgksbud
+Referencia interna no sensible: 58112135B (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: G29538047.
+
+Expediente nº 0030 — Departamento de Atención al Cliente.
+Titular: Hugo del Carmen Dalí-Castro, con documento de identidad z 4040453 w.
+Contacto: teléfono +34-678-27-00-25, correo electrónico hugo.moreno30@arcanube.example.com.
+Domicilio: Avda. Dalí 157, 08013 Barcelona.
+Cuenta bancaria asociada a nóminas: ES80 4804 8555 0688 0347 4682.
+Durante la auditoría se detectó que la contraseña Qu4s4r4722# quedó expuesta en un registro del sistema.
+Referencia interna no sensible: 19913576Z (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: F88862539.
+La empresa BANCO SANTANDER SA gestiona la nómina de toda la plantilla.
+
+Expediente nº 0031 — Departamento de Auditoría Interna.
+Titular: raúl ortiz torres, con documento de identidad 31837210N.
+Contacto: teléfono +34-676-76-21-64, correo electrónico raúl.blanco31@arcanube.example.com.
+Domicilio: Avda. Mayor 124, 46100 Burjassot.
+Cuenta bancaria asociada a nóminas: ES1658475837011699494002.
+El registro del incidente contiene: {"user": "raúl", "password": "Tr0ub4dor9945"}
+Referencia interna no sensible: 48412328F (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: F39394291.
+
+Expediente nº 0032 — Departamento de Finanzas.
+Titular: Carmen Torres Díaz, con documento de identidad x 9723634 q.
+Contacto: teléfono (91) 234 21 47, correo electrónico carmen.gil32@arcanube.example.com.
+Domicilio: Ronda Goya 80, 29602 Marbella.
+Cuenta bancaria asociada a nóminas: ES4778073877079186240709.
+El CVV de la tarjeta es 643.
+Referencia interna no sensible: 77349752P (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: C44489940.
+
+Expediente nº 0033 — Departamento de Finanzas.
+Titular: JOSE ANTONIO VÁZQUEZ SERRANO, con documento de identidad 90.774.633-G.
+Contacto: teléfono +34-674-80-12-33, correo electrónico jose.suárez33@arcanube.example.com.
+Domicilio: Calle Colón 194, 41001 Sevilla.
+Cuenta bancaria asociada a nóminas: ES20 2479 7464 0785 3547 4748.
+El CVV de la tarjeta es 788.
+Referencia interna no sensible: 45186708L (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: G95704631.
+
+Expediente nº 0034 — Departamento de Auditoría Interna.
+Titular: ESPERANZA gómez gutiérrez, con documento de identidad 29711402W.
+Contacto: teléfono +34 685 282 470, correo electrónico esperanza.etxebarria34@arcanube.example.com.
+Domicilio: Urb. Velázquez 84, 28001 Madrid.
+Cuenta bancaria asociada a nóminas: ES3359517689015150111933.
+El CVV de la tarjeta es 604.
+Referencia interna no sensible: 25585427A (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: D82148284.
+
+Expediente nº 0035 — Departamento de Jurídico.
+Titular: ORTEGA Marta Etxebarria, con documento de identidad 99625660X.
+Contacto: teléfono 655684858, correo electrónico ortega.gómez35@arcanube.example.com.
+Domicilio: Ronda Velázquez 108, 29602 Marbella.
+Cuenta bancaria asociada a nóminas: ES5990177686098220147477.
+Se filtró el siguiente token de acceso: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJBow8w3Ndr86ZfnN8du9WIn0.Bow8w3Ndr86ZfnN8du9W
+Referencia interna no sensible: 37542226W (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: J37804191.
+
+Expediente nº 0036 — Departamento de Atención al Cliente.
+Titular: GUTIÉRREZ SERRANO, Rubén, con documento de identidad 72.506.491-A.
+Contacto: teléfono (91) 212 94 13, correo electrónico gutiérrez.díaz36@arcanube.example.com.
+Domicilio: Calle Cervantes 38, 50001 Zaragoza.
+Cuenta bancaria asociada a nóminas: ES82 1243 6869 0322 3905 8786.
+El PIN de la tarjeta corporativa asociada es 7897.
+Referencia interna no sensible: 80610004A (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: B73920651.
+ARTÍCULO QUINTO: ningún expediente puede divulgarse fuera de la organización.
+
+Expediente nº 0037 — Departamento de Finanzas.
+Titular: D. Dolores Suárez Rostova, con documento de identidad 97608902F.
+Contacto: teléfono (91) 758 13 17, correo electrónico d.puig37@arcanube.example.com.
+Domicilio: Urb. Miguel Hernández 158, 41001 Sevilla.
+Cuenta bancaria asociada a nóminas: ES8875807984072394676630.
+Se filtró el siguiente token de acceso: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJefLerNHu9GCLgR0OVSnBIn0.efLerNHu9GCLgR0OVSnB
+Referencia interna no sensible: 40667888Z (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: F70867592.
+
+Expediente nº 0038 — Departamento de Jurídico.
+Titular: Pilar del Carmen Castro-Gómez, con documento de identidad X-7956894-K.
+Contacto: teléfono +34 612 243 983, correo electrónico pilar.pérez38@arcanube.example.com.
+Domicilio: Plaza Gran Vía 66, 41001 Sevilla.
+Cuenta bancaria asociada a nóminas: ES2425278075026846807195.
+La clave de API comprometida fue sk-proj-92407908aeeb2c17f2bed026342345ae.
+Referencia interna no sensible: 51471222B (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: F10819505.
+
+Expediente nº 0039 — Departamento de Finanzas.
+Titular: diego moreno delgado, con documento de identidad 71200181R.
+Contacto: teléfono 650491958, correo electrónico diego.castro39@arcanube.example.com.
+Domicilio: Ronda Gran Vía 8, 08013 Barcelona.
+Cuenta bancaria asociada a nóminas: ES8184326585049597103497.
+La cadena de conexión filtrada fue postgres://diego:V4l3nc!a871#@10.20.41.194:5432/core.
+Referencia interna no sensible: 92924837R (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: B46521025.
+Reside en Calle
+Miguel Hernández, sin más datos adicionales.
+
+Expediente nº 0040 — Departamento de Auditoría Interna.
+Titular: Dolores Ortiz Mendoza, con documento de identidad 15276327A.
+Contacto: teléfono (91) 213 46 96, correo electrónico dolores.mendoza40@arcanube.example.com.
+Domicilio: Plaza Miguel Hernández 194, 41001 Sevilla.
+Cuenta bancaria asociada a nóminas: ES5496336053060119506608.
+Durante la auditoría se detectó que la contraseña Tr0ub4dor3359& quedó expuesta en un registro del sistema.
+Referencia interna no sensible: 38351344G (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: E48848936.
+
+
+SECCIÓN TERCERA: AUDITORÍA DE CREDENCIALES Y ACCESOS
+
+Expediente nº 0041 — Departamento de Auditoría Interna.
+Titular: CRISTINA RUIZ GARCÍA, con documento de identidad z 3860617 a.
+Contacto: teléfono (91) 506 15 65, correo electrónico cristina.fernández41@arcanube.example.com.
+Domicilio: Paseo Colón 34, 29602 Marbella.
+Cuenta bancaria asociada a nóminas: ES8685322275083899770161.
+Se filtró el siguiente token de acceso: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJRzhbuXMZ5f0pKGytvukFIn0.RzhbuXMZ5f0pKGytvukF
+Referencia interna no sensible: 25304396V (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: J36025314.
+
+Expediente nº 0042 — Departamento de Sistemas.
+Titular: MONTSERRAT blanco moreno, con documento de identidad 80.852.623-X.
+Contacto: teléfono 687980930, correo electrónico montserrat.sánchez42@arcanube.example.com.
+Domicilio: Avda. Cervantes 51, 28001 Madrid.
+Cuenta bancaria asociada a nóminas: ES9339029095097778376379.
+La clave de API comprometida fue sk-proj-49f9f11463fb1afe49b30395a83d3291.
+Referencia interna no sensible: 56095437A (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: J96721710.
+AVISO IMPORTANTE para todos los empleados del departamento de Sistemas.
+
+Expediente nº 0043 — Departamento de Auditoría Interna.
+Titular: LÓPEZ Diego Navarro, con documento de identidad 48.841.557-E.
+Contacto: teléfono (91) 496 62 53, correo electrónico lópez.martínez43@arcanube.example.com.
+Domicilio: Urb. Velázquez 157, 41001 Sevilla.
+Cuenta bancaria asociada a nóminas: ES5464822079081241601103.
+El CVV de la tarjeta es 358.
+Referencia interna no sensible: 98122539C (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: C54743095.
+
+Expediente nº 0044 — Departamento de Logística.
+Titular: MORENO BLANCO, Pablo, con documento de identidad 79.865.081-L.
+Contacto: teléfono +34 641 551 377, correo electrónico moreno.ortega44@arcanube.example.com.
+Domicilio: Ronda Gran Vía 101, 29602 Marbella.
+Cuenta bancaria asociada a nóminas: ES4963813093092326084218.
+La clave de API comprometida fue sk-proj-ffcd91dcb7b678af6c0c766c104d1e51.
+Referencia interna no sensible: 81673763P (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: E72950208.
+
+Expediente nº 0045 — Departamento de Logística.
+Titular: Dra. Carmen Suárez Rubio, con documento de identidad 26.802.975-V.
+Contacto: teléfono 633554863, correo electrónico dra.martínez45@arcanube.example.com.
+Domicilio: Urb. Velázquez 108, 41001 Sevilla.
+Cuenta bancaria asociada a nóminas: ES36 8873 7081 0464 6557 3035.
+El PIN de la tarjeta corporativa asociada es 5469.
+Referencia interna no sensible: 70306604Q (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: C68716573.
+
+Expediente nº 0046 — Departamento de Jurídico.
+Titular: Pablo del Carmen Gutiérrez-Rubio, con documento de identidad 50192261M.
+Contacto: teléfono 651830338, correo electrónico pablo.pérez46@arcanube.example.com.
+Domicilio: Paseo Goya 102, 28001 Madrid.
+Cuenta bancaria asociada a nóminas: ES4471424678022541603187.
+El registro del incidente contiene: {"user": "pablo", "password": "C4mpe0n2402#"}
+Referencia interna no sensible: 15140967D (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: H28628439.
+
+Expediente nº 0047 — Departamento de Finanzas.
+Titular: jose antonio rubio garcía, con documento de identidad 97607800D.
+Contacto: teléfono +34-614-92-32-47, correo electrónico jose.vázquez47@arcanube.example.com.
+Domicilio: Plaza Miguel Hernández 39, 28001 Madrid.
+Cuenta bancaria asociada a nóminas: ES8048935934040152333466.
+La cadena de conexión filtrada fue postgres://jose:Qu4s4r1039!@10.20.215.232:5432/core.
+Referencia interna no sensible: 77085942C (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: J12205915.
+
+Expediente nº 0048 — Departamento de Logística.
+Titular: María del Carmen Navarro Moreno, con documento de identidad 76.593.187-J.
+Contacto: teléfono +34-625-14-08-47, correo electrónico maría.pérez48@arcanube.example.com.
+Domicilio: Calle Diagonal 91, 41001 Sevilla.
+Cuenta bancaria asociada a nóminas: ES7295766908059338006453.
+Durante la auditoría se detectó que la contraseña N0v46126& quedó expuesta en un registro del sistema.
+Referencia interna no sensible: 12179995N (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: B56278607.
+La Dra. estuvo presente durante toda la auditoría, sin más detalles que añadir.
+
+Expediente nº 0049 — Departamento de Atención al Cliente.
+Titular: HUGO GÓMEZ SERRANO, con documento de identidad 91.896.538-S.
+Contacto: teléfono +34-693-33-35-65, correo electrónico hugo.puig49@arcanube.example.com.
+Domicilio: Plaza Velázquez 87, 28001 Madrid.
+Cuenta bancaria asociada a nóminas: ES72 3986 3209 0689 8609 4933.
+El PIN de la tarjeta corporativa asociada es 1717.
+Referencia interna no sensible: 36772387R (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: F51617680.
+
+Expediente nº 0050 — Departamento de Auditoría Interna.
+Titular: MARÍA DEL CARMEN delgado colón, con documento de identidad Y-0802018-E.
+Contacto: teléfono (91) 227 57 65, correo electrónico maría.delgado50@arcanube.example.com.
+Domicilio: Calle Gran Vía 49, 46100 Burjassot.
+Cuenta bancaria asociada a nóminas: ES4382047334098609734112.
+La cadena de conexión filtrada fue postgres://maría:R0j01363@10.20.21.111:5432/core.
+Referencia interna no sensible: 90859912M (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: J49428661.
+
+Expediente nº 0051 — Departamento de Jurídico.
+Titular: GÓMEZ Cristina Pérez, con documento de identidad 96323085M.
+Contacto: teléfono +34-622-36-66-82, correo electrónico gómez.rubio51@arcanube.example.com.
+Domicilio: Plaza Cervantes 115, 29602 Marbella.
+Cuenta bancaria asociada a nóminas: ES1567598325055977184861.
+Se filtró el siguiente token de acceso: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJr86eNwXQ7iLWceWwxJLQIn0.r86eNwXQ7iLWceWwxJLQ
+Referencia interna no sensible: 59790013B (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: H20319387.
+
+Expediente nº 0052 — Departamento de Dirección General.
+Titular: DALÍ SUÁREZ, Marta, con documento de identidad 03478029S.
+Contacto: teléfono 666980546, correo electrónico dalí.dalí52@arcanube.example.com.
+Domicilio: Ronda Cervantes 64, 46100 Burjassot.
+Cuenta bancaria asociada a nóminas: ES89 7340 2929 0882 9167 2842.
+Se filtró el siguiente token de acceso: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJmiekS9Y79PRIssjRRkwnIn0.miekS9Y79PRIssjRRkwn
+Referencia interna no sensible: 36975128G (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: D76306502.
+El titular Ana
+García confirmó la recepción del expediente.
+
+Expediente nº 0053 — Departamento de Atención al Cliente.
+Titular: Dra. Carlos Suárez Suárez, con documento de identidad z 8030667 s.
+Contacto: teléfono +34-654-95-32-37, correo electrónico dra.sánchez53@arcanube.example.com.
+Domicilio: Calle Dalí 80, 50001 Zaragoza.
+Cuenta bancaria asociada a nóminas: ES1130536194067375882324.
+La clave de API comprometida fue sk-proj-f864c908abccf5f987e42ce22c9c4537.
+Referencia interna no sensible: 85647532R (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: A20901547.
+
+Expediente nº 0054 — Departamento de Dirección General.
+Titular: María del Carmen Torres-Alonso, con documento de identidad 38879071D.
+Contacto: teléfono (91) 350 97 61, correo electrónico maría.ramos54@arcanube.example.com.
+Domicilio: Ronda Goya 128, 50001 Zaragoza.
+Cuenta bancaria asociada a nóminas: ES4984302195030395757276.
+Se filtró el siguiente token de acceso: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJCvi1t9vyVFgohBid61z7In0.Cvi1t9vyVFgohBid61z7
+Referencia interna no sensible: 31434525X (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: F35479101.
+El Sr. llegó tarde a la reunión de cierre del expediente.
+
+Expediente nº 0055 — Departamento de Auditoría Interna.
+Titular: isabel mendoza rostova, con documento de identidad 52780072V.
+Contacto: teléfono +34-632-31-00-51, correo electrónico isabel.alonso55@arcanube.example.com.
+Domicilio: Plaza Serrano 6, 41001 Sevilla.
+Cuenta bancaria asociada a nóminas: ES3867811797073551203668.
+La cadena de conexión filtrada fue postgres://isabel:Qu4s4r4691!@10.20.217.28:5432/core.
+Referencia interna no sensible: 67838146G (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: E59093843.
+
+Expediente nº 0056 — Departamento de Dirección General.
+Titular: Pilar Suárez López, con documento de identidad Z-4841933-R.
+Contacto: teléfono +34 651 854 861, correo electrónico pilar.rostova56@arcanube.example.com.
+Domicilio: Urb. Velázquez 50, 28001 Madrid.
+Cuenta bancaria asociada a nóminas: ES7783785582026362441032.
+Se filtró el siguiente token de acceso: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJx9IwiLyccSXGj3i5tyM0In0.x9IwiLyccSXGj3i5tyM0
+Referencia interna no sensible: 89688374X (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: J78412668.
+
+Expediente nº 0057 — Departamento de Recursos Humanos.
+Titular: ANA ISABEL RAMOS PUIG, con documento de identidad z 5161977 t.
+Contacto: teléfono +34 680 115 852, correo electrónico ana.puig57@arcanube.example.com.
+Domicilio: Plaza Gran Vía 29, 46100 Burjassot.
+Cuenta bancaria asociada a nóminas: ES1053504728084409838989.
+La clave de API comprometida fue sk-proj-437c4a9bafc506875acdf42fc8ff6545.
+Referencia interna no sensible: 91883092Q (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: D43087238.
+
+Expediente nº 0058 — Departamento de Logística.
+Titular: ADRIÁN ramos gutiérrez, con documento de identidad y 8049765 d.
+Contacto: teléfono (91) 914 45 46, correo electrónico adrián.ruiz58@arcanube.example.com.
+Domicilio: Ronda Miguel Hernández 177, 46100 Burjassot.
+Cuenta bancaria asociada a nóminas: ES58 9899 7220 0155 9240 7746.
+El registro del incidente contiene: {"user": "adrián", "password": "V4l3nc!a5684"}
+Referencia interna no sensible: 98043078P (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: H38720823.
+
+Expediente nº 0059 — Departamento de Logística.
+Titular: COLÓN Carmen Domínguez, con documento de identidad 32115895Y.
+Contacto: teléfono 606813620, correo electrónico colón.dalí59@arcanube.example.com.
+Domicilio: Calle Diagonal 190, 08013 Barcelona.
+Cuenta bancaria asociada a nóminas: ES9646974814062122544758.
+Se filtró el siguiente token de acceso: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJgVaI5z52Dm7tO4fJHS64In0.gVaI5z52Dm7tO4fJHS64
+Referencia interna no sensible: 33496796Z (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: C14877451.
+
+Expediente nº 0060 — Departamento de Logística.
+Titular: MENDOZA ÁLVAREZ, Pilar, con documento de identidad 14401654C.
+Contacto: teléfono (91) 565 92 79, correo electrónico mendoza.dalí60@arcanube.example.com.
+Domicilio: Calle Cervantes 146, 28001 Madrid.
+Cuenta bancaria asociada a nóminas: ES7790923198034730510121.
+El CVV de la tarjeta es 266.
+Referencia interna no sensible: 71594457K (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: E34991216.
+No debe anonimizarse el UUID 550e8400-e29b-41d4-a716-446655440000 del sistema.
+
+
+SECCIÓN CUARTA: REGISTRO DE DOMICILIOS Y CONTACTO
+
+Expediente nº 0061 — Departamento de Sistemas.
+Titular: D. Ana Serrano Vázquez, con documento de identidad z 5501696 d.
+Contacto: teléfono +34 653 798 927, correo electrónico d.gómez61@arcanube.example.com.
+Domicilio: Urb. Gran Vía 104, 08013 Barcelona.
+Cuenta bancaria asociada a nóminas: ES39 4027 3303 0417 3456 1704.
+Se filtró el siguiente token de acceso: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJoU7sSaOQdhtzF3Rth4sMIn0.oU7sSaOQdhtzF3Rth4sM
+Referencia interna no sensible: 39410942G (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: H30560218.
+
+Expediente nº 0062 — Departamento de Auditoría Interna.
+Titular: Milagros del Carmen Suárez-Castro, con documento de identidad 91.313.946-J.
+Contacto: teléfono +34 670 532 309, correo electrónico milagros.rubio62@arcanube.example.com.
+Domicilio: Ronda Miguel Hernández 196, 50001 Zaragoza.
+Cuenta bancaria asociada a nóminas: ES9696536927017342308622.
+La clave de API comprometida fue sk-proj-d2c7145181ac0324eaeadb052a891ecc.
+Referencia interna no sensible: 96104027C (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: G60259293.
+
+Expediente nº 0063 — Departamento de Dirección General.
+Titular: consuelo rubio ortega, con documento de identidad 87.715.861-W.
+Contacto: teléfono (91) 282 78 60, correo electrónico consuelo.dalí63@arcanube.example.com.
+Domicilio: Ronda Gran Vía 139, 28001 Madrid.
+Cuenta bancaria asociada a nóminas: ES0330864648012458553152.
+Se filtró el siguiente token de acceso: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJPHGZpvr6SgYzV2amgcLRIn0.PHGZpvr6SgYzV2amgcLR
+Referencia interna no sensible: 16533225F (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: A63991141.
+
+Expediente nº 0064 — Departamento de Sistemas.
+Titular: Dolores Gutiérrez Colón, con documento de identidad 98.182.614-F.
+Contacto: teléfono (91) 712 96 51, correo electrónico dolores.navarro64@arcanube.example.com.
+Domicilio: Avda. Velázquez 75, 28001 Madrid.
+Cuenta bancaria asociada a nóminas: ES0059443347062323875625.
+Durante la auditoría se detectó que la contraseña S3cr3tP@ss7009 quedó expuesta en un registro del sistema.
+Referencia interna no sensible: 16292676N (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: G80392240.
+
+Expediente nº 0065 — Departamento de Atención al Cliente.
+Titular: CRISTINA CASTRO CASTRO, con documento de identidad 63554620P.
+Contacto: teléfono 630245233, correo electrónico cristina.ramos65@arcanube.example.com.
+Domicilio: Paseo Colón 194, 46100 Burjassot.
+Cuenta bancaria asociada a nóminas: ES0133658586081492878344.
+Se filtró el siguiente token de acceso: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJIipmO50fSlqPL2lVSID1In0.IipmO50fSlqPL2lVSID1
+Referencia interna no sensible: 54689713D (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: A38428357.
+La cuenta bancaria es ES60 2038
+5778 9830 0076 0236.
+
+Expediente nº 0066 — Departamento de Sistemas.
+Titular: CARMEN ruiz puig, con documento de identidad 74.098.828-G.
+Contacto: teléfono (91) 489 69 78, correo electrónico carmen.blanco66@arcanube.example.com.
+Domicilio: Urb. Miguel Hernández 102, 29602 Marbella.
+Cuenta bancaria asociada a nóminas: ES15 6053 5285 0699 0866 1574.
+El registro del incidente contiene: {"user": "carmen", "password": "Qu4s4r5256#"}
+Referencia interna no sensible: 59755172X (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: G16135823.
+No debe anonimizarse el hash SHA256 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.
+
+Expediente nº 0067 — Departamento de Logística.
+Titular: MORENO Sofía Fernández, con documento de identidad y 2557039 m.
+Contacto: teléfono 644273769, correo electrónico moreno.gutiérrez67@arcanube.example.com.
+Domicilio: Urb. Diagonal 185, 50001 Zaragoza.
+Cuenta bancaria asociada a nóminas: ES4972235026042823636110.
+Se filtró el siguiente token de acceso: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ7NEkXkSE4HNdc06PVz0oIn0.7NEkXkSE4HNdc06PVz0o
+Referencia interna no sensible: 30270856T (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: D77878323.
+
+Expediente nº 0068 — Departamento de Auditoría Interna.
+Titular: SUÁREZ MARTÍNEZ, Milagros, con documento de identidad 74040345X.
+Contacto: teléfono +34-601-59-06-10, correo electrónico suárez.fernández68@arcanube.example.com.
+Domicilio: Paseo Goya 2, 29602 Marbella.
+Cuenta bancaria asociada a nóminas: ES1296735501074223131791.
+El registro del incidente contiene: {"user": "suárez", "password": "N0v42947!"}
+Referencia interna no sensible: 22927031V (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: C42342289.
+
+Expediente nº 0069 — Departamento de Logística.
+Titular: Dr. Carmen Dalí Torres, con documento de identidad z 4080351 h.
+Contacto: teléfono 640261914, correo electrónico dr.pérez69@arcanube.example.com.
+Domicilio: Calle Alcalá 104, 41001 Sevilla.
+Cuenta bancaria asociada a nóminas: ES2915192531058703562433.
+Durante la auditoría se detectó que la contraseña Tr0ub4dor2817! quedó expuesta en un registro del sistema.
+Referencia interna no sensible: 77089857J (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: F85947990.
+
+Expediente nº 0070 — Departamento de Sistemas.
+Titular: Elena del Carmen Dalí-López, con documento de identidad X-1247353-V.
+Contacto: teléfono (91) 677 94 14, correo electrónico elena.álvarez70@arcanube.example.com.
+Domicilio: Ronda Diagonal 122, 08013 Barcelona.
+Cuenta bancaria asociada a nóminas: ES83 6152 1256 0855 1294 7872.
+La cadena de conexión filtrada fue postgres://elena:N0v41270&@10.20.42.145:5432/core.
+Referencia interna no sensible: 42275631H (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: G82553061.
+
+Expediente nº 0071 — Departamento de Finanzas.
+Titular: íñigo ortega díaz, con documento de identidad 58664992L.
+Contacto: teléfono 610202996, correo electrónico íñigo.serrano71@arcanube.example.com.
+Domicilio: Ronda Alcalá 14, 50001 Zaragoza.
+Cuenta bancaria asociada a nóminas: ES0574996347044971717583.
+Se filtró el siguiente token de acceso: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJEw6AQOfMXSfjSNTtgatwIn0.Ew6AQOfMXSfjSNTtgatw
+Referencia interna no sensible: 46207439G (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: C21716836.
+
+Expediente nº 0072 — Departamento de Dirección General.
+Titular: Diego Ortiz Rubio, con documento de identidad 12490873X.
+Contacto: teléfono (91) 112 47 62, correo electrónico diego.ortega72@arcanube.example.com.
+Domicilio: Calle Dalí 91, 28001 Madrid.
+Cuenta bancaria asociada a nóminas: ES16 2387 4977 0272 6352 3160.
+El CVV de la tarjeta es 604.
+Referencia interna no sensible: 29587040A (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: C68341261.
+El pasaporte español asociado tiene el formato AAA123456, distinto del DNI.
+
+Expediente nº 0073 — Departamento de Auditoría Interna.
+Titular: ADRIÁN CASTRO RAMOS, con documento de identidad z 3280754 q.
+Contacto: teléfono +34-614-35-75-88, correo electrónico adrián.díaz73@arcanube.example.com.
+Domicilio: Plaza Cervantes 64, 28001 Madrid.
+Cuenta bancaria asociada a nóminas: ES3059911110052937013303.
+Se filtró el siguiente token de acceso: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJXuuY18it6mt78sREJpxYIn0.XuuY18it6mt78sREJpxY
+Referencia interna no sensible: 62738860B (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: B85678734.
+
+Expediente nº 0074 — Departamento de Recursos Humanos.
+Titular: CARMEN colón álvarez, con documento de identidad Z-1160289-J.
+Contacto: teléfono +34-690-32-55-31, correo electrónico carmen.mendoza74@arcanube.example.com.
+Domicilio: Paseo Miguel Hernández 113, 29602 Marbella.
+Cuenta bancaria asociada a nóminas: ES50 3280 5961 0946 3344 4029.
+Se filtró el siguiente token de acceso: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJWe9DyF5QHXw3HNfVOwOcIn0.We9DyF5QHXw3HNfVOwOc
+Referencia interna no sensible: 96574622E (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: G54506155.
+
+Expediente nº 0075 — Departamento de Finanzas.
+Titular: GÓMEZ Paz García, con documento de identidad 74892608P.
+Contacto: teléfono 659831384, correo electrónico gómez.suárez75@arcanube.example.com.
+Domicilio: Avda. Velázquez 192, 46100 Burjassot.
+Cuenta bancaria asociada a nóminas: ES4174088586054314948417.
+Se filtró el siguiente token de acceso: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJgz7h6itCmDDBRtsYh0OPIn0.gz7h6itCmDDBRtsYh0OP
+Referencia interna no sensible: 32059232F (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: J33414716.
+
+Expediente nº 0076 — Departamento de Auditoría Interna.
+Titular: SERRANO ORTIZ, Isabel, con documento de identidad 85.963.619-S.
+Contacto: teléfono +34-653-09-41-68, correo electrónico serrano.fernández76@arcanube.example.com.
+Domicilio: Paseo Gran Vía 48, 08013 Barcelona.
+Cuenta bancaria asociada a nóminas: ES84 4232 8365 0597 8384 6049.
+El PIN de la tarjeta corporativa asociada es 4371.
+Referencia interna no sensible: 47358810W (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: B82060023.
+
+Expediente nº 0077 — Departamento de Auditoría Interna.
+Titular: Sra. Diego Suárez Gil, con documento de identidad 85779702Y.
+Contacto: teléfono (91) 497 88 60, correo electrónico sra.ruiz77@arcanube.example.com.
+Domicilio: Plaza Gran Vía 126, 28001 Madrid.
+Cuenta bancaria asociada a nóminas: ES91 6700 6766 0898 9264 3861.
+El registro del incidente contiene: {"user": "sra", "password": "R0j09679!"}
+Referencia interna no sensible: 27978165X (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: B42020689.
+
+Expediente nº 0078 — Departamento de Jurídico.
+Titular: Raúl del Carmen Ruiz-Álvarez, con documento de identidad z 2313029 q.
+Contacto: teléfono +34-656-77-93-04, correo electrónico raúl.álvarez78@arcanube.example.com.
+Domicilio: Avda. Velázquez 100, 29602 Marbella.
+Cuenta bancaria asociada a nóminas: ES08 8973 9804 0815 2945 3588.
+El CVV de la tarjeta es 243.
+Referencia interna no sensible: 35111946B (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: H93135800.
+REGISTRO GENERAL DE ENTRADA Y SALIDA DE DOCUMENTOS del departamento.
+Reside en Calle
+Miguel Hernández, sin más datos adicionales.
+
+Expediente nº 0079 — Departamento de Auditoría Interna.
+Titular: javier blanco garcía, con documento de identidad 87653539X.
+Contacto: teléfono +34-654-91-30-82, correo electrónico javier.mendoza79@arcanube.example.com.
+Domicilio: Avda. Mayor 144, 08013 Barcelona.
+Cuenta bancaria asociada a nóminas: ES5878098272020309894844.
+La cadena de conexión filtrada fue postgres://javier:Azul4795!@10.20.71.58:5432/core.
+Referencia interna no sensible: 82156607X (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: C71380637.
+
+Expediente nº 0080 — Departamento de Finanzas.
+Titular: Ana Isabel Rostova Ruiz, con documento de identidad 96499894J.
+Contacto: teléfono +34-673-33-02-95, correo electrónico ana.alonso80@arcanube.example.com.
+Domicilio: Urb. Alcalá 139, 46100 Burjassot.
+Cuenta bancaria asociada a nóminas: ES4579652677014635810753.
+El CVV de la tarjeta es 982.
+Referencia interna no sensible: 21674661S (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: B41802361.
+
+
+ANEXO TÉCNICO: REFERENCIAS NO SENSIBLES PARA CONTROL
+
+Expediente nº 0081 — Departamento de Atención al Cliente.
+Titular: RUBÉN BLANCO ORTIZ, con documento de identidad 76514083Y.
+Contacto: teléfono (91) 387 86 78, correo electrónico rubén.muñoz81@arcanube.example.com.
+Domicilio: Avda. Miguel Hernández 53, 50001 Zaragoza.
+Cuenta bancaria asociada a nóminas: ES3763025794062140898896.
+El CVV de la tarjeta es 987.
+Referencia interna no sensible: 98032908G (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: C43511112.
+
+Expediente nº 0082 — Departamento de Dirección General.
+Titular: ÁLVARO gil navarro, con documento de identidad Z-6949543-Y.
+Contacto: teléfono +34-660-66-53-02, correo electrónico álvaro.sánchez82@arcanube.example.com.
+Domicilio: Avda. Diagonal 162, 41001 Sevilla.
+Cuenta bancaria asociada a nóminas: ES4625257600072688011591.
+Durante la auditoría se detectó que la contraseña V4l3nc!a7521& quedó expuesta en un registro del sistema.
+Referencia interna no sensible: 18500100H (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: G39236638.
+
+Expediente nº 0083 — Departamento de Logística.
+Titular: ALONSO Paz Mendoza, con documento de identidad 17528063Q.
+Contacto: teléfono +34-646-13-59-50, correo electrónico alonso.martínez83@arcanube.example.com.
+Domicilio: Plaza Alcalá 141, 46100 Burjassot.
+Cuenta bancaria asociada a nóminas: ES42 1752 2631 0128 8885 7579.
+La cadena de conexión filtrada fue postgres://alonso:S3cr3tP@ss7240@10.20.1.254:5432/core.
+Referencia interna no sensible: 67418250F (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: C97241147.
+
+Expediente nº 0084 — Departamento de Finanzas.
+Titular: MUÑOZ DOMÍNGUEZ, Raúl, con documento de identidad Z-2777050-N.
+Contacto: teléfono +34 653 196 064, correo electrónico muñoz.ramos84@arcanube.example.com.
+Domicilio: Plaza Cervantes 22, 29602 Marbella.
+Cuenta bancaria asociada a nóminas: ES38 4836 8032 0223 8152 8761.
+Se filtró el siguiente token de acceso: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJeKGBavh1RDofXgwsxY2NIn0.eKGBavh1RDofXgwsxY2N
+Referencia interna no sensible: 29173414W (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: J85603667.
+CONFIDENCIAL INTERNO — esta sección no debe distribuirse fuera de Auditoría.
+
+Expediente nº 0085 — Departamento de Sistemas.
+Titular: Dr. Ana Muñoz Rubio, con documento de identidad 92149351N.
+Contacto: teléfono +34-629-15-80-87, correo electrónico dr.pérez85@arcanube.example.com.
+Domicilio: Ronda Colón 106, 29602 Marbella.
+Cuenta bancaria asociada a nóminas: ES3826463293085423172946.
+El CVV de la tarjeta es 539.
+Referencia interna no sensible: 52211967G (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: D47173969.
+
+Expediente nº 0086 — Departamento de Recursos Humanos.
+Titular: Pablo del Carmen Navarro-Vázquez, con documento de identidad 68386961A.
+Contacto: teléfono 652579931, correo electrónico pablo.vázquez86@arcanube.example.com.
+Domicilio: Plaza Miguel Hernández 133, 29602 Marbella.
+Cuenta bancaria asociada a nóminas: ES32 1894 4921 0247 4204 9386.
+El registro del incidente contiene: {"user": "pablo", "password": "V4l3nc!a8665!"}
+Referencia interna no sensible: 58465780B (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: C61920550.
+
+Expediente nº 0087 — Departamento de Atención al Cliente.
+Titular: victoria suárez colón, con documento de identidad 01851322Y.
+Contacto: teléfono (91) 140 17 60, correo electrónico victoria.rostova87@arcanube.example.com.
+Domicilio: Calle Goya 151, 41001 Sevilla.
+Cuenta bancaria asociada a nóminas: ES2856939209064858967966.
+Durante la auditoría se detectó que la contraseña S3cr3tP@ss4556! quedó expuesta en un registro del sistema.
+Referencia interna no sensible: 51594998W (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: J37272705.
+
+Expediente nº 0088 — Departamento de Dirección General.
+Titular: Álvaro Colón Gil, con documento de identidad 41630244Z.
+Contacto: teléfono +34-697-97-33-54, correo electrónico álvaro.navarro88@arcanube.example.com.
+Domicilio: Ronda Gran Vía 175, 50001 Zaragoza.
+Cuenta bancaria asociada a nóminas: ES6219485005068286609282.
+Durante la auditoría se detectó que la contraseña R0j02887! quedó expuesta en un registro del sistema.
+Referencia interna no sensible: 11699863G (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: A31989243.
+
+Expediente nº 0089 — Departamento de Logística.
+Titular: ANA ISABEL BLANCO DALÍ, con documento de identidad Z-1980663-T.
+Contacto: teléfono +34 644 964 418, correo electrónico ana.ortiz89@arcanube.example.com.
+Domicilio: Plaza Colón 192, 08013 Barcelona.
+Cuenta bancaria asociada a nóminas: ES8654569582083556929540.
+Se filtró el siguiente token de acceso: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJCwEJwpgJSoFc1pDxj51IIn0.CwEJwpgJSoFc1pDxj51I
+Referencia interna no sensible: 98007006Z (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: D53191535.
+
+Expediente nº 0090 — Departamento de Logística.
+Titular: HUGO castro gil, con documento de identidad 90372247A.
+Contacto: teléfono +34 624 071 191, correo electrónico hugo.gutiérrez90@arcanube.example.com.
+Domicilio: Urb. Alcalá 31, 28001 Madrid.
+Cuenta bancaria asociada a nóminas: ES0294501752018939270714.
+La cadena de conexión filtrada fue postgres://hugo:R0j05100&@10.20.23.142:5432/core.
+Referencia interna no sensible: 71303434T (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: F36933626.
+isadora fonseca alves firmó la recepción del expediente sin más datos.
+
+Expediente nº 0091 — Departamento de Auditoría Interna.
+Titular: RAMOS Beatriz Navarro, con documento de identidad 98.309.564-C.
+Contacto: teléfono 620208677, correo electrónico ramos.garcía91@arcanube.example.com.
+Domicilio: Urb. Serrano 198, 46100 Burjassot.
+Cuenta bancaria asociada a nóminas: ES85 7718 1391 0524 7675 3938.
+El registro del incidente contiene: {"user": "ramos", "password": "N0v45048!"}
+Referencia interna no sensible: 37540722V (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: D66346728.
+El titular Ana
+García confirmó la recepción del expediente.
+
+Expediente nº 0092 — Departamento de Logística.
+Titular: MARTÍNEZ MORENO, Ana Isabel, con documento de identidad z 6249378 f.
+Contacto: teléfono +34-611-39-54-09, correo electrónico martínez.gómez92@arcanube.example.com.
+Domicilio: Calle Miguel Hernández 134, 28001 Madrid.
+Cuenta bancaria asociada a nóminas: ES9292803187085269372591.
+Se filtró el siguiente token de acceso: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJPis05yZuCo6iVggBthwVIn0.Pis05yZuCo6iVggBthwV
+Referencia interna no sensible: 70655283D (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: H45568761.
+
+Expediente nº 0093 — Departamento de Logística.
+Titular: Dña. Sergio Pérez Muñoz, con documento de identidad 43.995.720-D.
+Contacto: teléfono 612242388, correo electrónico dña.navarro93@arcanube.example.com.
+Domicilio: Ronda Diagonal 11, 29602 Marbella.
+Cuenta bancaria asociada a nóminas: ES17 6828 7492 0963 2052 9251.
+La cadena de conexión filtrada fue postgres://dña:S3cr3tP@ss519@10.20.219.116:5432/core.
+Referencia interna no sensible: 84618850H (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: D22713811.
+
+Expediente nº 0094 — Departamento de Finanzas.
+Titular: Milagros del Carmen Gómez-Díaz, con documento de identidad 53.765.180-N.
+Contacto: teléfono (91) 745 92 20, correo electrónico milagros.torres94@arcanube.example.com.
+Domicilio: Calle Miguel Hernández 34, 28001 Madrid.
+Cuenta bancaria asociada a nóminas: ES1022281357035528277571.
+Se filtró el siguiente token de acceso: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJYf0Yh6d5ASExAv4rBjMMIn0.Yf0Yh6d5ASExAv4rBjMM
+Referencia interna no sensible: 96876236X (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: H65296657.
+
+Expediente nº 0095 — Departamento de Logística.
+Titular: jose antonio martínez pérez, con documento de identidad 33440045T.
+Contacto: teléfono +34 651 338 023, correo electrónico jose.blanco95@arcanube.example.com.
+Domicilio: Avda. Mayor 52, 41001 Sevilla.
+Cuenta bancaria asociada a nóminas: ES1888599921054865120552.
+La clave de API comprometida fue sk-proj-fea3a6e61f3dcdd2656939089cdf5f35.
+Referencia interna no sensible: 57201978L (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: C85579195.

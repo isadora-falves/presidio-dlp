@@ -6,9 +6,9 @@ from presidio_analyzer.nlp_engine import NlpArtifacts
 
 _LETTERS = "TRWAGMYFPDXBNJZSQVHLCKE"
 
-# Tolera los separadores con los que la gente escribe un DNI/NIE a mano o en
-# formularios: puntos de millar, espacios o guiones ("12.345.678-Z",
-# "X 1234567 L"), además del formato sin separadores ("12345678Z").
+# Tolerates the separators people use when writing a DNI/NIE by hand or
+# in forms: thousand-separator dots, spaces, or hyphens ("12.345.678-Z",
+# "X 1234567 L"), as well as the no-separator format ("12345678Z").
 _CANDIDATE = re.compile(
     r"\b(?:[XYZxyz][-.\s]?(?:\d[-.\s]?){7}[A-Za-z]|(?:\d[-.\s]?){7,8}[A-Za-z])\b"
 )
@@ -34,14 +34,15 @@ def _is_valid(raw: str) -> bool:
 
 
 class DniNieRecognizer(EntityRecognizer):
-    """DNI y NIE españoles: regex tolerante a separadores + validación por
-    dígito de control (checksum módulo 23, mismo algoritmo que usan
-    EsNifRecognizer/EsNieRecognizer de Presidio).
+    """Spanish DNI and NIE: separator-tolerant regex + control-digit
+    validation (checksum modulo 23, the same algorithm Presidio's own
+    EsNifRecognizer/EsNieRecognizer use).
 
-    Sustituye a los recognizers nativos porque estos exigen el documento
-    sin separadores internos, y en la práctica el DNI se escribe a menudo
-    con puntos de millar ("12.345.678-Z") o con guion tras la letra de
-    extranjero ("X-1234567-L") — casos que se comprobaron sin cubrir.
+    Replaces the native recognizers because those require the number
+    written with no internal separators, while in practice a DNI is often
+    written with thousand-separator dots ("12.345.678-Z") or with a hyphen
+    after the foreigner's letter ("X-1234567-L") — cases confirmed to be
+    missed by the native ones.
     """
 
     ENTITY = "DNI_NIE"

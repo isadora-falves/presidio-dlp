@@ -1,16 +1,16 @@
-"""Mide Precision/Recall/F1 de dlp.engine contra un gabarito manual
-(eval_gold.py), con la misma lógica de puntuación que describe el
-enunciado:
+"""Measures dlp.engine's Precision/Recall/F1 against a hand-written gold
+standard (eval_gold.py), using the same scoring logic the assignment
+describes:
 
-  TP = entidad sustituida por completo y con la etiqueta correcta.
-  FN = omitida, sustituida a medias, o con la etiqueta equivocada.
-  FP = sustitución indebida o con la etiqueta equivocada.
+  TP = entity replaced in full and with the correct label.
+  FN = missed, partially replaced, or tagged with the wrong label.
+  FP = an uncalled-for substitution, or the wrong label.
 
-No es el oráculo del profesor — es nuestro propio gabarito, para medir el
-efecto real de lo que sabemos que falta (ver LIM-1, LIM-2 en la bitácora)
-en vez de solo decir "lo probé y funciona".
+This is not the professor's oracle — it's our own gold standard, meant to
+measure the real impact of what we already know is missing (see LIM-1,
+LIM-2 in the bitácora) instead of just saying "I tried it and it works".
 
-Uso: python eval.py
+Usage: python eval.py
 """
 
 from pathlib import Path

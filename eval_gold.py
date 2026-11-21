@@ -1,12 +1,12 @@
-"""Gabarito manual para los archivos de examples/. Cada entrada es la
-sustitución correcta, en el orden en que aparece en el texto. Se resuelve
-a offsets con str.find() con cursor, así que el orden importa cuando una
-misma subcadena se repite.
+"""Hand-written gold standard for the files in examples/. Each entry is
+the correct substitution, in the order it appears in the text. It gets
+resolved to offsets with a cursored str.find(), so order matters whenever
+the same substring repeats.
 
-Reflejado con honestidad: donde ya sabemos que hay un falso positivo o un
-límite no corregido (ver LIM-1, LIM-2 en la bitácora), el gabarito pone lo
-que DEBERÍA pasar, no lo que el motor hace hoy — así el eval.py de verdad
-mide el costo de esos casos en vez de ocultarlo.
+Kept honest on purpose: wherever we already know there's a false positive
+or an uncorrected limitation (see LIM-1, LIM-2 in the bitácora), the gold
+standard records what SHOULD happen, not what the engine does today — that
+way eval.py actually measures the cost of those cases instead of hiding it.
 """
 
 GOLD: dict[str, list[tuple[str, str]]] = {
@@ -82,9 +82,9 @@ GOLD: dict[str, list[tuple[str, str]]] = {
         ("12345678Z", "DNI_NIE"),
     ],
     "casos_nombres_ambiguos.txt": [
-        # "Victoria" y "Consuelo" (solas, línea 1 y 3) NO son personas aquí
-        # -> sin entrada en el gabarito (LIM-1): lo que el motor marque ahí
-        # cuenta como falso positivo, a propósito.
+        # "Victoria" and "Consuelo" (alone, line 1 and 3) are NOT people
+        # here -> no gold entry for them (LIM-1): whatever the engine
+        # tags there counts as a false positive, on purpose.
         ("Paz Vega", "PERSON"),
         ("Consuelo Martínez", "PERSON"),
     ],
@@ -117,8 +117,8 @@ GOLD: dict[str, list[tuple[str, str]]] = {
         ("ALVES Isadora Fonseca", "PERSON"),
         ("ALVES, Isadora Fonseca", "PERSON"),
         ("ALVES, Isadora FOnseca", "PERSON"),
-        # LIM-2: el nombre completo debería ser "Isadora fonseca alves"
-        # (100% minúsculas); el motor hoy solo recupera "alves".
+        # LIM-2: the full name should be "Isadora fonseca alves" (100%
+        # lowercase); the engine today only recovers "alves".
         ("Isadora fonseca alves", "PERSON"),
         ("JOSE ANTONIO PEREZ", "PERSON"),
         ("ANA ISABEL RUIZ MORENO", "PERSON"),
