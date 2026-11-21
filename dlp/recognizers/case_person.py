@@ -21,6 +21,17 @@ _SURNAME_COMMA = re.compile(
 _PARTICLES = {"de", "del", "la", "las", "los", "y"}
 _EXTENDABLE_POS = {"PROPN", "NOUN"}
 
+# Short, all-uppercase acronyms from this same assignment's own domain
+# (document/finance/security terms), excluded from ever acting as a name
+# anchor. Confirmed bug: "Los DNI, NIE e IBAN incluidos..." matched the
+# "SURNAME, GivenName" shape (two uppercase words separated by a comma);
+# re-normalized to "Nie Dni" and re-queried, spaCy's NER judged that a
+# plausible two-word person name and confirmed the false match.
+_STOPWORDS = {
+    "dni", "nie", "nif", "cif", "iban", "pin", "cvv", "otp", "pdf",
+    "api", "jwt", "uuid", "sms", "gps", "iva", "adn", "secret",
+}
+
 # Honorifics that act as an anchor even when not uppercase: "Titular: Dra.
 # Carlos Mendoza Pérez, con documento..." (no verb after it, a
 # form/registry-style sentence) wasn't detected by the native
@@ -49,6 +60,8 @@ def _title_case(text: str) -> str:
 
 def _is_anchor(token_text: str) -> bool:
     letters_only = token_text.replace("-", "")
+    if letters_only.lower() in _STOPWORDS:
+        return False
     if len(letters_only) >= 2 and letters_only.isalpha() and letters_only.isupper():
         return True
     return token_text.rstrip(".").lower() in _HONORIFICS
@@ -174,6 +187,9 @@ class CasePersonRecognizer(EntityRecognizer):
         # Case 1: "SURNAME(S), GivenName(s)" -> reordered before verifying.
         for match in _SURNAME_COMMA.finditer(text):
             surname, given = match.group(1), match.group(2)
+            words = surname.split() + given.split()
+            if any(w.lower() in _STOPWORDS for w in words):
+                continue
             normalized = f"{_title_case(given)} {_title_case(surname)}"
             if self._confirmed_spans(normalized):
                 results.append(
