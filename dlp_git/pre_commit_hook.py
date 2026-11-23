@@ -63,12 +63,22 @@ def get_staged_files() -> list:
     return [line for line in result.stdout.splitlines() if line]
 
 
-def read_staged_content(path: str) -> str:
-    """El contenido exacto que va al commit, no el que esté en el disco."""
+def read_staged_content(path: str):
+    """El contenido exacto que va al commit, no el que esté en el disco.
+
+    None si `path` ya no está en el índice en este preciso momento —
+    confirmado: otro proceso git corriendo en paralelo (p. ej. alguien
+    probando comandos en otra terminal) puede quitar del índice un
+    archivo justo entre `get_staged_files()` y esta llamada, y sin
+    `check=False` eso tira un traceback sin manejar en vez de un
+    mensaje claro del propio hook.
+    """
     result = subprocess.run(
         ["git", "show", f":{path}"],
-        capture_output=True, text=True, encoding="utf-8", errors="ignore", check=True,
+        capture_output=True, text=True, encoding="utf-8", errors="ignore",
     )
+    if result.returncode != 0:
+        return None
     return result.stdout
 
 
@@ -100,6 +110,8 @@ def main() -> int:
             continue
 
         content = read_staged_content(path)
+        if content is None:
+            continue
         entities = find_entities(content)
         if not entities:
             continue

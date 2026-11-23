@@ -43,7 +43,7 @@ de cero.
 | `PHONE`    | `PhoneRecognizer` (nativo, reconfigurado a toda Europa)         | `phonenumbers` + contexto en español |
 | `DNI_NIE`  | `DniNieRecognizer` (propio, `dlp/recognizers/dni_nie.py`)       | Regex tolerante a separadores + dígito de control (checksum módulo 23) |
 | `IBAN`     | `IbanRecognizer` (nativo, los 76 países de su registro) + `IbanLineBreakRecognizer` (propio) | Regex + checksum mod-97; el propio cubre un IBAN partido por un salto de línea |
-| `SECRET`   | `SecretRecognizer` (propio, `dlp/recognizers/secret.py`)        | Reconocimiento contextual: palabras clave en español + formatos de credencial (Bearer, AWS, JWT, `sk-...`, URL con credencial embebida) |
+| `SECRET`   | `SecretRecognizer` (propio, `dlp/recognizers/secret.py`)        | Reconocimiento contextual: palabras clave en español + formatos de credencial (Bearer, AWS, JWT, `sk-...`, URL con credencial embebida) + variables de entorno (`NOMBRE_SECRET_KEY=valor`) y el antipatrón `os.environ.get("NOMBRE", "valor")` |
 
 El análisis se restringe explícitamente a estas 6 entidades
 (`dlp/engine.py`, `ENTITY_LABEL_MAP`) para no generar falsos positivos con
@@ -56,10 +56,17 @@ es un teléfono" y se excluyeron 4 por falsos positivos reales:
 Luxemburgo, Dinamarca, Noruega e Islas Feroe (detalle y ejemplos en la
 bitácora, ADR correspondiente).
 
-**PERSON** además pasa por tres guardias de precisión en `dlp/filters.py`:
+**PERSON** además pasa por varias guardias de precisión en `dlp/filters.py`:
 se descarta cualquier resultado que aparezca justo después de un
 indicador de vía española (Calle, Avenida, Gran Vía...), que contenga un
-dígito, y se recorta un honorífico inicial (Sra., Dr., D....) del span.
+dígito o un guion bajo (un identificador de código, no un nombre real),
+o que sea una palabra fija conocida que no es un nombre ("Bearer"); se
+recorta un honorífico inicial (Sra., Dr., D....) o un saludo ("Hola ")
+del span. **EMAIL** descarta el "usuario@host" de una URL de conexión
+(`scheme://usuario@host`) y recorta un prefijo `VARIABLE=` que el regex
+nativo arrastra dentro del span (acepta "=" en la parte local de una
+dirección). **DNI_NIE** descarta un número que en realidad es un código
+de producto/pedido (el checksum por sí solo no distingue ambos casos).
 **PHONE** también descarta un resultado que caiga entero dentro de un
 `IBAN` ya detectado (un IBAN partido por salto de línea puede coincidir
 con el formato de teléfono de algún país).
@@ -75,11 +82,15 @@ otro punto del documento.
 ```
 main.py                             # CLI
 dlp/engine.py                        # construcción del analyzer/anonymizer, división en párrafos, mapeo de entidades
-dlp/filters.py                       # guardias de precisión para PERSON y PHONE
+dlp/filters.py                       # guardias de precisión para las 6 etiquetas
 dlp/recognizers/dni_nie.py            # DniNieRecognizer propio (DNI/NIE con separadores)
 dlp/recognizers/secret.py             # SecretRecognizer propio
 dlp/recognizers/case_person.py        # PERSON con mayúsculas irregulares/apellido primero (verificado con una segunda consulta a spaCy)
-dlp/recognizers/iban_linebreak.py     # IBAN partido por un salto de línea
+dlp/recognizers/self_intro_person.py  # PERSON: nombre de pila solo tras una autopresentación ("Soy Pedro")
+dlp/recognizers/iban_linebreak.py     # IBAN partido por un salto de línea o con puntos como separador
+dlp_git/pre_commit_hook.py            # Parte 2: hook de pre-commit (ver sección más abajo)
+dlp_git/install_hook.py               # Parte 2: instalador del hook
+.dlpignore                            # Parte 2: rutas que el hook no escanea
 eval.py, eval_gold.py                 # autoevaluación propia (ver más abajo)
 examples/sample_input.txt             # texto de prueba con las 6 categorías y casos límite
 examples/bateria_original.txt         # pruebas de estrés adicionales (ver bitácora)
@@ -88,6 +99,8 @@ examples/stress_original.txt
 examples/casos_*.txt                  # archivos de prueba por escenario (direcciones, mayúsculas, formato de nombres, etc.)
 examples/documento_oficial.txt        # documento sintético de ~800 líneas (ver bitácora) para probar a escala
 examples/*_output.txt                 # salida aprobada de cada archivo de examples/, para detectar regresiones a simple vista
+demo_git/config_prod_fake.py          # Parte 2: fixture para la demo en vivo del hook
+integracion_email/                    # Parte 2: caso de integración realista (env vars, cliente Python, email) usado para encontrar bugs
 ```
 
 ### Autoevaluación (no es el oráculo del profesor)
@@ -143,21 +156,25 @@ en el log, solo los tipos de entidad encontrados:
 
 ### Exclusiones (`.dlpignore`)
 
-`examples/` (corpus de prueba de la Parte 1), `demo_git/` (fixture de
-demo de esta misma sección, ver abajo), `*.sanitized` y `logs/` quedan
-fuera del escaneo del hook — todos con DNI/IBAN/SECRET falsos a
+`examples/` (corpus de prueba de la Parte 1) y `demo_git/` (fixture de
+demo, ver abajo) quedan fuera del escaneo del hook, junto con
+`*.sanitized` y `logs/` — los dos primeros con DNI/IBAN/SECRET falsos a
 propósito, así que si no se ignoraran, cualquier commit que los tocara
 (incluido el que los añade al repo) quedaría bloqueado siempre. Patrones
-en `.dlpignore`, uno por línea.
+en `.dlpignore`, uno por línea. `integracion_email/` (ver más abajo) NO
+está en esta lista a propósito: queremos que el hook la escanee de
+verdad.
 
 ### Demostración
 
-`demo_git/config_prod_fake.py` tiene una clave de AWS y un IBAN
-sintéticos (ninguno real), como plantilla para probar el flujo completo.
-Vive dentro de `demo_git/`, que está en `.dlpignore` — si no, el propio
-commit que lo añade al repo quedaría bloqueado. Para la demo en vivo se
-copia fuera de esa carpeta (a una ruta que el hook sí escanea), se
-reproduce el bloqueo, y se limpia después:
+Dos formas de ver el bloqueo en acción:
+
+**1. `demo_git/config_prod_fake.py`** — una clave de AWS y un IBAN
+sintéticos (ninguno real), como plantilla. Vive dentro de `demo_git/`,
+que está en `.dlpignore` — si no, el propio commit que lo añade al repo
+quedaría bloqueado. Para demostrarlo en vivo se copia fuera de esa
+carpeta (a una ruta que el hook sí escanea), se reproduce el bloqueo, y
+se limpia después:
 
 ```bash
 cp demo_git/config_prod_fake.py config_prod_demo.py
@@ -167,6 +184,18 @@ mv config_prod_demo.py.sanitized config_prod_demo.py
 git add config_prod_demo.py
 git commit -m "demo (sanitizado)"  # pasa
 rm config_prod_demo.py              # limpieza, no se queda en el repo
+```
+
+**2. `integracion_email/cliente_email.py`** — un cliente Python
+realista para un servicio de email transaccional ficticio, con un valor
+por defecto hardcodeado en `os.environ.get(...)` (antipatrón real: "sigue
+funcionando aunque la variable de entorno no esté configurada"). Esta
+carpeta sí se escanea de verdad (no está en `.dlpignore`), así que el
+bloqueo se ve directo sobre el archivo real, sin copiarlo a ningún lado:
+
+```bash
+git add integracion_email/cliente_email.py
+git commit -m "demo"               # bloqueado, genera cliente_email.py.sanitized
 ```
 
 ### Mapeo a ISO/IEC 27001
