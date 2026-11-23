@@ -77,11 +77,28 @@ texto se analiza párrafo por párrafo (no de una sola vez) para que el
 contenido de un párrafo lejano no cambie la predicción sobre un nombre en
 otro punto del documento.
 
+Antes de analizar, el texto pasa por `dlp/normalize.py`: se eliminan los
+caracteres Unicode invisibles (espacio de ancho cero, separador de
+palabras, guion suave, marcas direccionales — categoría "Cf"), se pliega
+un espacio exótico (espacio fino, de no separación...) a espacio ASCII
+normal (categoría "Zs"), y una tabla curada traduce los homóglifos más
+comunes de otro alfabeto que se ven como una letra o dígito latino
+(cirílico О/о, griego Ο/Ε/Β/Ζ, dígitos arábigo-índicos) a su equivalente
+ASCII. Se guarda un mapa de índices para traducir cada resultado de
+vuelta a las posiciones del texto **original**, sin modificar — ningún
+filtro ni la sustitución final tocan el texto normalizado directamente.
+Encontrado probando `examples/01_archivo_trampa_105_casos.txt`, un
+archivo de estrés propio con 8 técnicas de evasión distintas (detalle en
+la bitácora, ADR-48); lo que queda deliberadamente sin cubrir (números
+por extenso, valores en base64/JSON/HTML, un secreto partido entre dos
+variables) está documentado como LIM-6.
+
 ### Estructura
 
 ```
 main.py                             # CLI
 dlp/engine.py                        # construcción del analyzer/anonymizer, división en párrafos, mapeo de entidades
+dlp/normalize.py                     # normalización Unicode (homóglifos, caracteres invisibles) antes de analizar
 dlp/filters.py                       # guardias de precisión para las 6 etiquetas
 dlp/recognizers/dni_nie.py            # DniNieRecognizer propio (DNI/NIE con separadores)
 dlp/recognizers/secret.py             # SecretRecognizer propio
