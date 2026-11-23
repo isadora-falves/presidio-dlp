@@ -126,8 +126,15 @@ _PATTERNS = [
 # config file assigning a Stripe-style value (which uses "_", not the
 # "-" our rigid sk- pattern expects) to such a variable passed through
 # completely untouched.
+# The value is captured in two shapes: quoted (anything but the closing
+# quote counts) or bare. The bare branch excludes "(", ")", "[", "]":
+# without that, "API_KEY = os.environ[\"RELAYMAIL_API_KEY\"]" let the
+# capture run right through "os.environ[" (confirmed) and tag that
+# literal code as the secret, since nothing in the character class
+# stopped it before the opening quote that follows "[".
 _ENV_VAR_CANDIDATE = re.compile(
-    r"\b(?P<key>[A-Za-z][A-Za-z0-9_-]*)\s*[:=]\s*[\"']?(?P<secret>[^\s\"'#;,]{4,})"
+    r"\b(?P<key>[A-Za-z][A-Za-z0-9_-]*)\s*[:=]\s*"
+    r"(?:\"(?P<secret_dq>[^\"]{4,})\"|'(?P<secret_sq>[^']{4,})'|(?P<secret_bare>[^\s\"'#;,()\[\]]{4,}))"
 )
 
 # Only the LAST component(s) of the identifier are checked, not any
@@ -191,8 +198,23 @@ class SecretRecognizer(EntityRecognizer):
         for match in _ENV_VAR_CANDIDATE.finditer(text):
             if not _is_env_secret_key(match.group("key")):
                 continue
-            start, end = match.span("secret")
-            if not _looks_like_secret(match.group("secret")):
+            if match.group("secret_bare") is not None:
+                start, end = match.span("secret_bare")
+                value = match.group("secret_bare")
+                # A bare (unquoted) value with no digit at all is almost
+                # always a code reference, not a literal secret — confirmed:
+                # "os.environ" (reading the env var by name, the SAFE way to
+                # do it) has no bracket/paren but still has no digit either,
+                # unlike every real key/token/password value seen so far.
+                if not any(c.isdigit() for c in value):
+                    continue
+            elif match.group("secret_dq") is not None:
+                start, end = match.span("secret_dq")
+                value = match.group("secret_dq")
+            else:
+                start, end = match.span("secret_sq")
+                value = match.group("secret_sq")
+            if not _looks_like_secret(value):
                 continue
             results.append(
                 RecognizerResult(

@@ -95,6 +95,24 @@ def trim_person_honorifics(text: str, results: list) -> list:
     return results
 
 
+# The native SpacyRecognizer sometimes merges a leading "Hola" into the
+# PERSON span itself — confirmed: "Hola Laura," and "Hola Carlos," both
+# tag the whole "Hola <Name>" as one PERSON, not just the name. Other
+# greetings tried ("Saludos", "Querida", "Buenos días") didn't show the
+# same merge, so this is scoped to the one word actually seen doing it.
+_GREETING_PREFIX = re.compile(r"^hola\s+", re.IGNORECASE)
+
+
+def trim_person_greeting(text: str, results: list) -> list:
+    """Trim a leading "Hola " off a PERSON span."""
+    for r in results:
+        if r.entity_type == "PERSON":
+            m = _GREETING_PREFIX.match(text[r.start:r.end])
+            if m:
+                r.start += m.end()
+    return results
+
+
 # Words that precede a product/reference code, not a person's document
 # number. A checksum-valid DNI shape isn't unique to a real DNI: an
 # 8-digit product code can pass the same mod-23 checksum purely by
@@ -134,6 +152,61 @@ def drop_dni_nie_in_product_context(text: str, results: list) -> list:
         r for r in results
         if not (r.entity_type == "DNI_NIE" and is_product_context(text, r.start))
     ]
+
+
+# Fixed, known English words that occasionally get mistaken for a person
+# name by the native SpacyRecognizer when they show up capitalized outside
+# any Spanish sentence context (a code comment, a docstring, an HTTP
+# header example). Confirmed: "Authorization: Bearer <token>" tagged
+# "Bearer" itself as PERSON at the default score, inside the Parte 2
+# integration test files (a realistic case: that exact header appears in
+# any API client's docstring/example).
+_NON_PERSON_WORDS = {"bearer"}
+
+
+def drop_known_non_person_words(text: str, results: list) -> list:
+    """Drop PERSON results whose text is a fixed, known non-name word."""
+    return [
+        r for r in results
+        if not (r.entity_type == "PERSON" and text[r.start:r.end].strip().lower() in _NON_PERSON_WORDS)
+    ]
+
+
+# Presidio's native EmailRecognizer explicitly allows "=" inside the local
+# part of an address (its own regex: "[!#$%&'*+\-/=?^_`{|}~\w]", an RFC
+# 5322 edge case) — confirmed: a plain ".env"-style assignment (a variable
+# name, then "=", then an address) gets swallowed whole as a single
+# "email", variable name included, because nothing stops the match before
+# the "=". A real email essentially never contains "=" in its local part,
+# so the span is trimmed to start right after the last "=" before the "@".
+def trim_email_key_prefix(text: str, results: list) -> list:
+    """Trim a leading "VARIABLE=" off an EMAIL span."""
+    for r in results:
+        if r.entity_type == "EMAIL_ADDRESS":
+            span = text[r.start:r.end]
+            at = span.find("@")
+            if at != -1:
+                last_eq = span.rfind("=", 0, at)
+                if last_eq != -1:
+                    r.start += last_eq + 1
+    return results
+
+
+# A "user@host" shape right after "scheme://" is the authority part of a
+# URL, not a real email — confirmed: "smtps://apikey@smtp.ejemplo.com:587"
+# tags "apikey@smtp.ejemplo.com" as EMAIL, indistinguishable on its own
+# from a real address. Only the "scheme://" immediately before it (no
+# whitespace in between) reveals what it actually is.
+def drop_email_in_url(text: str, results: list) -> list:
+    """Drop EMAIL results that are the user-info part of a URL."""
+    kept = []
+    for r in results:
+        if r.entity_type == "EMAIL_ADDRESS":
+            back = max(text.rfind(" ", 0, r.start), text.rfind("\n", 0, r.start), text.rfind("\t", 0, r.start))
+            if "://" in text[back + 1:r.start]:
+                continue
+        kept.append(r)
+    return kept
 
 
 def drop_phone_inside_iban(results: list) -> list:

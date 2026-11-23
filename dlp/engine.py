@@ -6,9 +6,13 @@ from presidio_anonymizer.entities import OperatorConfig
 
 from dlp.filters import (
     drop_dni_nie_in_product_context,
+    drop_email_in_url,
+    drop_known_non_person_words,
     drop_person_in_addresses,
     drop_person_with_digits,
     drop_phone_inside_iban,
+    trim_email_key_prefix,
+    trim_person_greeting,
     trim_person_honorifics,
     trim_trailing_whitespace,
 )
@@ -176,11 +180,15 @@ def find_entities(text: str) -> list[tuple[int, int, str]]:
         results.extend(chunk_results)
 
     results = trim_trailing_whitespace(text, results)
+    results = trim_email_key_prefix(text, results)
+    results = drop_email_in_url(text, results)
     results = drop_person_in_addresses(text, results)
     results = drop_person_with_digits(text, results)
+    results = drop_known_non_person_words(text, results)
     results = drop_dni_nie_in_product_context(text, results)
     results = drop_phone_inside_iban(results)
     results = trim_person_honorifics(text, results)
+    results = trim_person_greeting(text, results)
     for result in results:
         result.entity_type = ENTITY_LABEL_MAP[result.entity_type]
     return [(r.start, r.end, r.entity_type) for r in results]
