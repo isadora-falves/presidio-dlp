@@ -8,7 +8,6 @@
 # siempre, incluido el propio commit que los añade al repo.
 examples/
 demo_git/
-integracion_email/
 
 # Generados por el propio hook; no tiene sentido volver a escanearlos.
 *.sanitized

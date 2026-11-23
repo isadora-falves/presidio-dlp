@@ -147,6 +147,17 @@ _ENV_SUFFIX_WORDS = {
 }
 _ENV_SUFFIX_PAIRS = {("api", "key"), ("api", "keys"), ("secret", "key"), ("secret", "keys"), ("access", "key"), ("access", "keys")}
 
+# A hardcoded fallback passed as the SECOND argument of os.environ.get(...)
+# / os.getenv(...) — "it still works even if the env var isn't set yet"
+# is a common real antipattern. None of the patterns above look inside a
+# function call's arguments at all, so a Stripe-style key hardcoded that
+# way, in a realistic integration test file, slipped through completely
+# untouched. Scoped to this one Python shape — the same antipattern in
+# another language's equivalent call isn't covered.
+_GETENV_FALLBACK_CANDIDATE = re.compile(
+    r"\bos\.(?:environ\.get|getenv)\(\s*[\"'](?P<key>[A-Za-z][A-Za-z0-9_-]*)[\"']\s*,\s*[\"'](?P<secret>[^\"']{4,})[\"']"
+)
+
 
 def _is_env_secret_key(key: str) -> bool:
     parts = [p for p in re.split(r"[_-]", key.lower()) if p]
@@ -215,6 +226,21 @@ class SecretRecognizer(EntityRecognizer):
                 start, end = match.span("secret_sq")
                 value = match.group("secret_sq")
             if not _looks_like_secret(value):
+                continue
+            results.append(
+                RecognizerResult(
+                    entity_type=self.ENTITY,
+                    start=start,
+                    end=end,
+                    score=self.SCORE,
+                )
+            )
+
+        for match in _GETENV_FALLBACK_CANDIDATE.finditer(text):
+            if not _is_env_secret_key(match.group("key")):
+                continue
+            start, end = match.span("secret")
+            if not _looks_like_secret(match.group("secret")):
                 continue
             results.append(
                 RecognizerResult(
