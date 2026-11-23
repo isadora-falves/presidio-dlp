@@ -430,7 +430,7 @@ Titular: <PERSON>, con documento de identidad <DNI_NIE>.
 Contacto: teléfono <PHONE>, correo electrónico <EMAIL>.
 Domicilio: Plaza Cervantes 115, 29602 Marbella.
 Cuenta bancaria asociada a nóminas: <IBAN>.
-Se filtró el siguiente token de acceso: <PERSON> <SECRET>
+Se filtró el siguiente token de acceso: Bearer <SECRET>
 Referencia interna no sensible: 59790013B (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: H20319387.
 
 Expediente nº 0052 — Departamento de Dirección General.
@@ -535,7 +535,7 @@ Cuenta bancaria asociada a nóminas: <IBAN>.
 Se filtró el siguiente token de acceso: Bearer <SECRET>
 Referencia interna no sensible: 16533225F (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: A63991141.
 
-Expediente nº 0064 — Departamento de Sistemas.
+<PERSON> nº 0064 — Departamento de Sistemas.
 Titular: <PERSON>, con documento de identidad <DNI_NIE>.
 Contacto: teléfono <PHONE>, correo electrónico <EMAIL>.
 Domicilio: <PERSON> 75, 28001 Madrid.
@@ -548,7 +548,7 @@ Titular: <PERSON>, con documento de identidad <DNI_NIE>.
 Contacto: teléfono <PHONE>, correo electrónico <EMAIL>.
 Domicilio: Paseo Colón 194, 46100 Burjassot.
 Cuenta bancaria asociada a nóminas: ES0133658586081492878344.
-Se filtró el siguiente token de acceso: <PERSON> <SECRET>
+Se filtró el siguiente token de acceso: Bearer <SECRET>
 Referencia interna no sensible: 54689713D (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: A38428357.
 La cuenta bancaria es ES60 2038
 5778 9830 0076 0236.
@@ -670,7 +670,7 @@ Cuenta bancaria asociada a nóminas: <IBAN>.
 La cadena de conexión filtrada fue postgres://javier:<SECRET>@10.20.71.58:5432/core.
 Referencia interna no sensible: 82156607X (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: C71380637.
 
-Expediente nº 0080 — Departamento de Finanzas.
+<PERSON> nº 0080 — Departamento de Finanzas.
 Titular: <PERSON>, con documento de identidad <DNI_NIE>.
 Contacto: teléfono <PHONE>, correo electrónico <EMAIL>.
 Domicilio: Urb. Alcalá 139, 46100 Burjassot.
@@ -689,7 +689,7 @@ Cuenta bancaria asociada a nóminas: <IBAN>.
 El CVV de la tarjeta es <SECRET>.
 Referencia interna no sensible: 98032908G (no es DNI, el dígito de control no corresponde). CIF de la empresa proveedora: C43511112.
 
-Expediente nº 0082 — Departamento de Dirección General.
+<PERSON> nº 0082 — Departamento de Dirección General.
 Titular: <PERSON> navarro, con documento de identidad <DNI_NIE>.
 Contacto: teléfono <PHONE>, correo electrónico <EMAIL>.
 Domicilio: Avda. Diagonal 162, 41001 Sevilla.

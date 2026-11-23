@@ -16,6 +16,7 @@ from dlp.filters import (
     trim_person_honorifics,
     trim_trailing_whitespace,
 )
+from dlp.normalize import map_span, normalize_with_map
 from dlp.recognizers.case_person import CasePersonRecognizer
 from dlp.recognizers.dni_nie import DniNieRecognizer
 from dlp.recognizers.iban_linebreak import IbanLineBreakRecognizer
@@ -167,10 +168,11 @@ def find_entities(text: str) -> list[tuple[int, int, str]]:
     re-derive positions from the final anonymized text.
     """
     analyzer = _get_analyzer()
+    normalized_text, index_map = normalize_with_map(text)
     results = []
-    for start, end in _split_paragraphs(text):
+    for start, end in _split_paragraphs(normalized_text):
         chunk_results = analyzer.analyze(
-            text=text[start:end],
+            text=normalized_text[start:end],
             language=LANGUAGE,
             entities=list(ENTITY_LABEL_MAP.keys()),
         )
@@ -178,6 +180,15 @@ def find_entities(text: str) -> list[tuple[int, int, str]]:
             r.start += start
             r.end += start
         results.extend(chunk_results)
+
+    # Recognizers ran against normalized_text (confusables folded,
+    # invisible characters dropped) so their own regex/checksum logic
+    # already sees clean ASCII; every span is translated back to the
+    # ORIGINAL text's offsets here, before any filter below touches
+    # text[r.start:r.end] — anonymize_text replaces on the original,
+    # unmodified text, never the normalized one.
+    for r in results:
+        r.start, r.end = map_span(index_map, r.start, r.end, len(text))
 
     results = trim_trailing_whitespace(text, results)
     results = trim_email_key_prefix(text, results)
