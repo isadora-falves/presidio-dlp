@@ -1,0 +1,16 @@
+# Patrones ignorados por dlp_git/pre_commit_hook.py. Una ruta por línea,
+# relativa a la raíz del repo; "/" al final = directorio completo,
+# cualquier otra línea se compara como patrón fnmatch.
+
+# Corpus de prueba de la Parte 1 y fixtures de demo de la Parte 2: llenos
+# de DNI/IBAN/SECRET falsos a propósito (son fixtures, no fugas reales) —
+# si no se ignoran, cualquier commit que los toque quedaría bloqueado
+# siempre, incluido el propio commit que los añade al repo.
+examples/
+demo_git/
+
+# Generados por el propio hook; no tiene sentido volver a escanearlos.
+*.sanitized
+
+# Log de auditoría del propio hook.
+logs/
