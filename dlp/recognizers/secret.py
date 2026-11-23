@@ -5,8 +5,8 @@ from presidio_analyzer import EntityRecognizer, RecognizerResult
 from presidio_analyzer.nlp_engine import NlpArtifacts
 
 # Only the VALUE (the "secret" group) gets tagged, never the keyword next
-# to it: in "La contraseña es Tr0ub4dor&3." only "Tr0ub4dor&3" should be
-# replaced, leaving "La contraseña es" untouched.
+# to it: in a sentence shaped "keyword + connector + value", only the
+# value should be replaced, leaving the keyword and connector untouched.
 # Words that unambiguously identify a secret on their own. "código" is left
 # out on purpose: it's only a secret when paired with a qualifier (código
 # postal, código de barras, código de producto are NOT secrets).
@@ -117,6 +117,39 @@ _PATTERNS = [
 ]
 
 
+# Environment-variable-style assignment (NAME followed by "=" then a
+# value, e.g. a Stripe-style key assigned to a *_SECRET_KEY variable).
+# The keyword patterns above all anchor on \b, which never breaks on "_" —
+# a keyword glued to another word by an underscore (as in a typical
+# SCREAMING_SNAKE_CASE env var name) has no word boundary where these
+# patterns need one, so it's invisible to them. Confirmed real gap: a
+# config file assigning a Stripe-style value (which uses "_", not the
+# "-" our rigid sk- pattern expects) to such a variable passed through
+# completely untouched.
+_ENV_VAR_CANDIDATE = re.compile(
+    r"\b(?P<key>[A-Za-z][A-Za-z0-9_-]*)\s*[:=]\s*[\"']?(?P<secret>[^\s\"'#;,]{4,})"
+)
+
+# Only the LAST component(s) of the identifier are checked, not any
+# substring: "TOKEN_EXPIRY" (a duration, not a secret) must NOT match just
+# because "token" appears somewhere in the name. This mirrors how real
+# env vars are named (the meaning first, the kind of value last).
+_ENV_SUFFIX_WORDS = {
+    "secret", "secrets", "token", "tokens", "password", "passwords",
+    "passwd", "pwd", "credential", "credentials", "pin", "pins", "passphrase",
+}
+_ENV_SUFFIX_PAIRS = {("api", "key"), ("api", "keys"), ("secret", "key"), ("secret", "keys"), ("access", "key"), ("access", "keys")}
+
+
+def _is_env_secret_key(key: str) -> bool:
+    parts = [p for p in re.split(r"[_-]", key.lower()) if p]
+    if not parts:
+        return False
+    if parts[-1] in _ENV_SUFFIX_WORDS:
+        return True
+    return len(parts) >= 2 and (parts[-2], parts[-1]) in _ENV_SUFFIX_PAIRS
+
+
 class SecretRecognizer(EntityRecognizer):
     """Contextual recognition of passwords, tokens and credentials.
 
@@ -154,4 +187,20 @@ class SecretRecognizer(EntityRecognizer):
                         score=self.SCORE,
                     )
                 )
+
+        for match in _ENV_VAR_CANDIDATE.finditer(text):
+            if not _is_env_secret_key(match.group("key")):
+                continue
+            start, end = match.span("secret")
+            if not _looks_like_secret(match.group("secret")):
+                continue
+            results.append(
+                RecognizerResult(
+                    entity_type=self.ENTITY,
+                    start=start,
+                    end=end,
+                    score=self.SCORE,
+                )
+            )
+
         return EntityRecognizer.remove_duplicates(results)
