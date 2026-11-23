@@ -20,6 +20,7 @@ from dlp.recognizers.self_intro_person import SelfIntroPersonRecognizer
 
 LANGUAGE = "es"
 
+#senha 123456
 # Entity type detected by Presidio -> exact label required by the assignment.
 ENTITY_LABEL_MAP = {
     "PERSON": "PERSON",
