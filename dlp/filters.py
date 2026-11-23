@@ -58,16 +58,21 @@ def drop_person_in_addresses(text: str, results: list) -> list:
 
 
 def drop_person_with_digits(text: str, results: list) -> list:
-    """Drop PERSON results that contain a digit.
+    """Drop PERSON results that contain a digit or an underscore.
 
-    A real name never has digits; when they show up it's because the
-    native SpacyRecognizer confused an unknown alphanumeric code
-    (confirmed: "AAA123456", the Spanish passport format, was tagged
-    PERSON) with a proper noun.
+    A real name never has either; when they show up it's because the
+    native SpacyRecognizer confused an unknown alphanumeric code with a
+    proper noun — confirmed with "AAA123456" (the Spanish passport
+    format) and, scanning a Python source file for the Parte 2 git hook,
+    "DB_IBAN" (an identifier, tagged PERSON at 0.85 just for being an
+    all-caps word next to "=").
     """
     return [
         r for r in results
-        if not (r.entity_type == "PERSON" and any(c.isdigit() for c in text[r.start:r.end]))
+        if not (
+            r.entity_type == "PERSON"
+            and any(c.isdigit() or c == "_" for c in text[r.start:r.end])
+        )
     ]
 
 
