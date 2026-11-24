@@ -5,16 +5,16 @@ from presidio_anonymizer import AnonymizerEngine
 from presidio_anonymizer.entities import OperatorConfig
 
 from dlp.filters import (
-    drop_dni_nie_in_product_context,
-    drop_email_in_url,
-    drop_known_non_person_words,
-    drop_person_in_addresses,
-    drop_person_with_digits,
-    drop_phone_inside_iban,
-    trim_email_key_prefix,
-    trim_person_greeting,
-    trim_person_honorifics,
-    trim_trailing_whitespace,
+    drop_dni_nie_in_product_context,  # descarta un DNI/NIE que en realidad es un código de producto/pedido
+    drop_email_in_url,  # descarta un EMAIL que en realidad es el usuario@host de una URL
+    drop_known_non_person_words,  # descarta un PERSON que es una palabra fija conocida (p. ej. "Bearer")
+    drop_person_in_addresses,  # descarta un PERSON que en realidad es el nombre de una calle
+    drop_person_with_digits,  # descarta un PERSON que contiene dígitos o guion bajo
+    drop_phone_inside_iban,  # descarta un PHONE que cae entero dentro de un IBAN ya detectado
+    trim_email_key_prefix,  # recorta un prefijo "VARIABLE=" del span de EMAIL
+    trim_person_greeting,  # recorta un saludo inicial ("Hola ") del span de PERSON
+    trim_person_honorifics,  # recorta un honorífico inicial ("Sra.", "Dr."...) del span de PERSON
+    trim_trailing_whitespace,  # recorta espacio en blanco al borde de cualquier resultado
 )
 from dlp.normalize import map_span, normalize_with_map
 from dlp.recognizers.case_person import CasePersonRecognizer
