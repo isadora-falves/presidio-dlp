@@ -8,6 +8,28 @@ de texto y sustituye los datos sensibles por 6 etiquetas fijas:
 Funciona completamente offline (modelo de spaCy instalado localmente en
 `.venv`); no requiere conexión a Internet ni interfaz gráfica.
 
+### Presidio vs. spaCy: qué hace cada uno
+
+**spaCy** es la librería de NLP (procesamiento de lenguaje natural) que de
+verdad "lee y entiende" el texto: separa palabras, identifica su función
+gramatical y, lo que más usamos aquí, reconoce **entidades nombradas**
+(NER) — por contexto, no por una lista de nombres memorizados, reconoce
+que "María García" es un nombre de persona aunque nunca lo haya visto
+antes. El modelo instalado es `es_core_news_md` (`es` = español,
+`core_news` = entrenado con noticias en español, `md` = tamaño medio).
+
+**Presidio** es la capa de más arriba: no tiene motor de lenguaje propio,
+delega eso en spaCy, y encima combina ese resultado con sus propios
+recognizers por regex + checksum (email, teléfono, IBAN, DNI/NIE) y con
+los 4 recognizers propios de este proyecto, todo bajo una sola API y un
+único resultado estandarizado.
+
+En una frase: **spaCy entiende el texto; Presidio organiza y combina
+esa comprensión con regex y checksum en un resultado único.** Se
+necesita NLP (no solo regex) porque no existe un formato fijo para "un
+nombre de persona" — a diferencia de un teléfono o un IBAN, que sí
+tienen una forma reconocible por patrón.
+
 El proyecto tiene dos partes: la **Parte 1** es el motor de anonimización
 en sí (CLI); la **Parte 2** reutiliza ese mismo motor como un control
 preventivo integrado en Git (hook de `pre-commit`).
