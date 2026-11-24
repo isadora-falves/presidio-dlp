@@ -1,5 +1,6 @@
 import argparse
 import sys
+from pathlib import Path
 
 from dlp.engine import anonymize_text
 
@@ -32,8 +33,7 @@ def main() -> int:
     anonymized_text = anonymize_text(original_text)
 
     try:
-        with open(args.output_path, "w", encoding="utf-8", newline="") as f:
-            f.write(anonymized_text)
+        Path(args.output_path).write_text(anonymized_text, encoding="utf-8", newline="")
     except OSError as exc:
         print(f"Error al escribir '{args.output_path}': {exc}", file=sys.stderr)
         return 1
