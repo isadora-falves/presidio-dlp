@@ -48,6 +48,10 @@ def normalize_with_map(text: str):
     bitácora for the full reasoning): digits spelled out as words,
     base64/JSON/HTML-encoded values, or a secret split across two
     variables or two sentences.
+
+    Example: normalize_with_map('A' + '\\u200b' + 'О' + '1') ->
+    ("AO1", [0, 2, 3]) — the zero-width space (index 1) is dropped
+    entirely; the Cyrillic "О" (index 2) is folded to a Latin "O".
     """
     out_chars = []
     index_map = []
@@ -69,7 +73,13 @@ def normalize_with_map(text: str):
 
 def map_span(index_map, start: int, end: int, original_len: int):
     """Translate a (start, end) span found in the normalized text back
-    to the matching span in the original text."""
+    to the matching span in the original text.
+
+    Example: with index_map = [0, 2, 3] (from the normalize_with_map
+    example above) and original_len = 4, map_span(index_map, 1, 3, 4)
+    -> (2, 4) — the span found at positions 1-3 of "AO1" corresponds to
+    positions 2-4 of the original "A\\u200bО1".
+    """
     orig_start = index_map[start] if start < len(index_map) else original_len
     orig_end = index_map[end - 1] + 1 if end - 1 < len(index_map) else original_len
     return orig_start, orig_end

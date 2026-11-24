@@ -141,6 +141,9 @@ def _split_paragraphs(text: str) -> list[tuple[int, int]]:
     document. We don't cut on sentences (periods) because "Titular: Dr.
     Ana Muñoz Rubio" has a period right after "Dr." — cutting there would
     separate the honorific from the name.
+
+    Example: _split_paragraphs("Hola Juan.\\n\\nEscribe a juan@ejemplo.com.")
+    -> [(0, 11), (12, 39)] — two paragraphs, split at the blank line.
     """
     spans = []
     para_start = None
@@ -165,6 +168,10 @@ def find_entities(text: str) -> list[tuple[int, int, str]]:
     anonymizing yet. Used by both `anonymize_text` and `eval.py`, so the
     latter can compare against a gold standard without having to
     re-derive positions from the final anonymized text.
+
+    Example: find_entities("Hola Juan.\\n\\nEscribe a juan@ejemplo.com.")
+    -> [(5, 9, "PERSON"), (22, 38, "EMAIL")] — only the positions of
+    what's sensitive, nothing replaced yet.
     """
     analyzer = _get_analyzer()
     normalized_text, index_map = normalize_with_map(text)
@@ -205,7 +212,11 @@ def find_entities(text: str) -> list[tuple[int, int, str]]:
 
 
 def anonymize_text(text: str) -> str:
-    """Replace sensitive data in `text` with its <TAG> labels."""
+    """Replace sensitive data in `text` with its <TAG> labels.
+
+    Example: anonymize_text("Hola Juan.\\n\\nEscribe a juan@ejemplo.com.")
+    -> "Hola <PERSON>.\\n\\nEscribe a <EMAIL>."
+    """
     anonymizer = _get_anonymizer()
 
     results = [
